@@ -5,7 +5,7 @@ const dotenv = require("dotenv")
 dotenv.config()
 
 const dbService = require("./db.js")
-const DbService = require("./db.js")
+
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
