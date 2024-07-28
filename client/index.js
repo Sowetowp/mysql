@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 function loadHtmlTable(data) {
     const table = document.querySelector('table tbody')
+    let tableHtml = ""
     if (data.length === 0) {
 
     }
