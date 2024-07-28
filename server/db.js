@@ -25,7 +25,7 @@ class DbService {
 
     async getAllData() {
         try {
-            const response = await new promise((resolve, reject) => {
+            const response = await new Promise((resolve, reject) => {
                 const query = "SELECT * FROM names;"
                 connection.query(query, (err, result) => {
                     if (err) reject(new Error(err, message))
