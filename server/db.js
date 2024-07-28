@@ -25,7 +25,9 @@ class DbService {
 
     async getAllData (){
         try {
-            const response = await new promise 
+            const response = await new promise ((resolve, reject)=>{
+                
+            })
         } catch (error) {
             console.log(error)
         }
