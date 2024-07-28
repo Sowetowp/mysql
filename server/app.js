@@ -18,7 +18,7 @@ app.post("/insert", (req, res) => {
 // read
 app.get("/getAll", (req, res) => {
     let db = DbService.getDbServiceInstance()
-    const result = dbService.g
+    const result = DbService.getAllData()
 })
 
 // update
