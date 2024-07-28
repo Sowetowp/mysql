@@ -26,7 +26,7 @@ class DbService {
     async getAllData (){
         try {
             const response = await new promise ((resolve, reject)=>{
-                const query = "SELECT * FROM names"
+                const query = "SELECT * FROM names;"
             })
         } catch (error) {
             console.log(error)
