@@ -1,1 +1,1 @@
-document.addEventListener(domc)
+document.addEventListener(DOMContentLoaded)
