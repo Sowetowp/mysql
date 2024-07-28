@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: false }))
 
 // create
 app.post("/insert", (req, res) => {
-
+    console.log(req.body)
 })
 
 // read
