@@ -25,7 +25,7 @@ class DbService {
 
     async getAllData (){
         try {
-            
+            const response = await new promise 
         } catch (error) {
             console.log(error)
         }
