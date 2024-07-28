@@ -16,6 +16,7 @@ app.post("/insert", (req, res) => {
 
 // read
 app.get("/getAll", (req, res) => {
+    let db = db
     res.json({
         success: true
     })
