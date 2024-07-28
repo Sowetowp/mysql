@@ -23,12 +23,13 @@ class DbService {
         instance ? instance : new DbService()
     }
 
-    async getAllData (){
+    async getAllData() {
         try {
-            const response = await new promise ((resolve, reject)=>{
+            const response = await new promise((resolve, reject) => {
                 const query = "SELECT * FROM names;"
-                connection.query(query, (err, result)=>{
-                    if(err)reject(new Error(err,message))
+                connection.query(query, (err, result) => {
+                    if (err) reject(new Error(err, message))
+                    resolve(result)
                 })
             })
         } catch (error) {
