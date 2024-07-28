@@ -23,3 +23,5 @@ class DbService{
 instance ? instance : new DbService()
     }
 }
+
+module.exports = d
