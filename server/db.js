@@ -20,6 +20,6 @@ connection.connect((err) => {
 
 class DbService{
     static getDbServiceInstance(){
-instance ? instance : 
+instance ? instance : new DbService()
     }
 }
