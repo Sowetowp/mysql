@@ -10,10 +10,9 @@ const connection = mysql.createConnection({
     port: process.env.DB_PORT
 })
 
-connection.connect((err)=>{
-    if(err){
+connection.connect((err) => {
+    if (err) {
         console.log(err.message)
-    }else{
-        console.log("db" + connection.state)
     }
+    console.log("db" + connection.state)
 })
