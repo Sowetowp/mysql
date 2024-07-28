@@ -18,9 +18,13 @@ connection.connect((err) => {
     console.log("db" + " " + connection.state)
 })
 
-class DbService{
-    static getDbServiceInstance(){
-instance ? instance : new DbService()
+class DbService {
+    static getDbServiceInstance() {
+        instance ? instance : new DbService()
+    }
+
+    async getAllData ()=>{
+        
     }
 }
 
