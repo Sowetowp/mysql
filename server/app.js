@@ -20,3 +20,6 @@ app.get("/getAll", (req, res) => {
 // update
 
 // delete
+
+
+app.listen(process.env.PORT)
