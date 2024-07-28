@@ -22,4 +22,4 @@ app.get("/getAll", (req, res) => {
 // delete
 
 
-app.listen(process.env.PORT)
+app.listen(process.env.PORT, ()=>{console.log(first)})
