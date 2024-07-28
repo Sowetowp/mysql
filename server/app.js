@@ -20,7 +20,7 @@ app.get("/getAll", (req, res) => {
     let db = dbService.getDbServiceInstance()
     const result = db.getAllData()
     result
-    .then(data=> res)
+    .then(data=> response.json({data:data}))
 })
 
 // update
