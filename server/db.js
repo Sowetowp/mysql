@@ -24,4 +24,4 @@ instance ? instance : new DbService()
     }
 }
 
-module.exports = d
+module.exports = DbService
