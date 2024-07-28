@@ -1,6 +1,8 @@
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
     loadHtmlTable([])
 })
-function loadHtmlTable (data){
-if(data.l)
+function loadHtmlTable(data) {
+    if (data.length === 0) {
+
+    }
 }
