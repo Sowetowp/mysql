@@ -21,7 +21,7 @@ app.get("/getAll", (req, res) => {
     const result = db.getAllData()
     result
         .then(data => res.json({ data: data }))
-        .catch()
+        .catch(err => console.log(err))
 })
 
 // update
