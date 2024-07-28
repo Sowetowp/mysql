@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     fetch('http://localhost:5000/getAll')
         .then(res => res.json())
-        .then(res => res.json())
+        .then(data => res.json())
     loadHtmlTable([])
 })
 function loadHtmlTable(data) {
