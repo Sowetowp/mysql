@@ -21,6 +21,7 @@ app.get("/getAll", (req, res) => {
     const result = db.getAllData()
     result
     .then(data=> response.json({data:data}))
+    .catch()
 })
 
 // update
