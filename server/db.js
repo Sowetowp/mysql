@@ -27,7 +27,7 @@ class DbService {
         try {
             
         } catch (error) {
-            
+            console.log(error)
         }
     }
 }
