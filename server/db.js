@@ -28,7 +28,7 @@ class DbService {
             const response = await new promise ((resolve, reject)=>{
                 const query = "SELECT * FROM names;"
                 connection.query(query, (err, result)=>{
-                    if(err)reject()
+                    if(err)reject(new Error(err,message))
                 })
             })
         } catch (error) {
