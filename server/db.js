@@ -9,3 +9,9 @@ const connecction = mysql.createConnection({
     database: process.env.DATABASE,
     port: process.env.DB_PORT
 })
+
+connecction.connect((err)=>{
+    if(err){
+        
+    }
+})
