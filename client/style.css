@@ -5,5 +5,5 @@ main{
 }
 table, th, td{
     border-collapse: collapse;
-    border: ;
+    border: 1px solid black;
 }
