@@ -12,6 +12,8 @@ const connecction = mysql.createConnection({
 
 connecction.connect((err)=>{
     if(err){
-        
+        console.log(err.message)
+    }else{
+        console.log("db" + connecction.state)
     }
 })
