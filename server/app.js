@@ -14,7 +14,9 @@ app.post("/insert", (req, res) => {
 
 // read
 app.get("/getAll", (req, res) => {
-    console.log("test")
+    res.json({
+        success: true
+    })
 })
 
 // update
