@@ -18,5 +18,5 @@ connection.connect((err) => {
 })
 
 class DbService{
-    static get
+    static getDbServiceInstance
 }
