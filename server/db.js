@@ -23,8 +23,12 @@ class DbService {
         instance ? instance : new DbService()
     }
 
-    async getAllData ()=>{
-        
+    async getAllData (){
+        try {
+            
+        } catch (error) {
+            
+        }
     }
 }
 
