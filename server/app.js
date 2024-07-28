@@ -5,13 +5,17 @@ const dotenv = require("dotenv")
 dotenv.config()
 app.use(cors())
 app.use(express.json())
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({ extended: false }))
 
 // create
-app.post("/insert", (req, res)=>{
-    
+app.post("/insert", (req, res) => {
+
 })
+
 // read
+app.get("/getAll", (req, res) => {
+    console.log("test")
+})
 
 // update
 
