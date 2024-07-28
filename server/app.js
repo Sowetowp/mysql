@@ -8,7 +8,9 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 // create
-
+app.post("/insert", (req, res)=>{
+    
+})
 // read
 
 // update
