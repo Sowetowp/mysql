@@ -20,7 +20,7 @@ connection.connect((err) => {
 
 class DbService {
     static getDbServiceInstance() {
-        instance ? instance : new DbService()
+        return instance ? instance : new DbService()
     }
 
     async getAllData() {
