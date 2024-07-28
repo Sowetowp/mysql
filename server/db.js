@@ -32,6 +32,7 @@ class DbService {
                     resolve(result)
                 })
             })
+            console.log(response)
         } catch (error) {
             console.log(error)
         }
