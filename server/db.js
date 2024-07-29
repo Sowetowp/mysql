@@ -65,7 +65,7 @@ class DbService {
     async deleteRow(id){
         id = parseInt(id, 10)
         const response = await new Promise((resolve, reject) => {
-            const query = "DELETE FROM names WHERE id = "
+            const query = "DELETE FROM names WHERE id = ?"
             connection.query(query, [name, dateAdded], (err, result) => {
                 if (err) {
                     console.error('Error executing query:', err.message);
