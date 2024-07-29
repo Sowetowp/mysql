@@ -80,6 +80,7 @@ class DbService {
                 }
             });
         });
+        console.log(response)
     }
 }
 
