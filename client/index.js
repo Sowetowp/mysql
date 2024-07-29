@@ -13,6 +13,7 @@ document.querySelector("table tbody").addEventListener("click", function (event)
 
 function deleteRow(id) {
     fetch(`http://localhost:5000/delete/${id}`)
+    method: "DELETE"
 }
 
 const addBtn = document.querySelector("#add-name-btn")
