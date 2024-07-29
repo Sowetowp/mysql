@@ -41,7 +41,7 @@ class DbService {
     async insertNewName(name) {
         try {
             const response = await new Promise((resolve, reject) => {
-                const query = "INSERT INTO names (name, date_added);"
+                const query = "INSERT INTO names (name, date_added) ;"
                 connection.query(query, (err, result) => {
                     if (err) reject(new Error(err.message))
                     resolve(result)
