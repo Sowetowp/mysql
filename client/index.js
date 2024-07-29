@@ -52,7 +52,6 @@ updateBtn.onclick = function () {
             location.reload()
         }
     })
-    console.log(name.dataset.id)
 }
 
 const addBtn = document.querySelector("#add-name-btn")
