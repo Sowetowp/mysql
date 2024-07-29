@@ -33,7 +33,7 @@ app.get("/getAll", (req, res) => {
 
 // delete
 app.delete("/delete/:id", (req, res) => {
-    console.log(req.params)
+    const {id} = req.params
 })
 
 app.listen(process.env.PORT, () => { console.log("app is running") })
