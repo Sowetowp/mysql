@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 document.querySelector("table tbody").addEventListener("click", function (event) {
-    if(event.target.className === )
+    if(event.target.className === "")
 })
 
 const addBtn = document.querySelector("#add-name-btn")
