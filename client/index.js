@@ -27,6 +27,7 @@ function deleteRow(id) {
 }
 
 function editRow(id) {
+    const updateSection 
     fetch(`http://localhost:5000/delete/${id}`, {
         method: "DELETE"
     })
