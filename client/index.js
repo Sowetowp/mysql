@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('http://localhost:5000/getAll')
         .then(res => res.json())
         .then(data => loadHtmlTable(data["data"]))
-    
+
 })
 
 const addBtn = document.querySelector("#add-name-btn")
-addBtn.onclick = function (){
+addBtn.onclick = function () {
     const nameInput = document.querySelector("#nameInput")
     const name = nameInput.value
     nameInput.value = ""
@@ -15,7 +15,8 @@ addBtn.onclick = function (){
         headers: {
             "Content-type": 'application/json'
         },
-        body: JSON.stringify({name: name})
+        method: "POST",
+        body: JSON.stringify({ name: name })
     })
 }
 
