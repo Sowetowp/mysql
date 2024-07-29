@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => loadHtmlTable(data["data"]))
     
 })
+
+
 function loadHtmlTable(data) {
     const table = document.querySelector('table tbody')
     console.log(data)
