@@ -86,7 +86,7 @@ class DbService {
         try {
             id = parseInt(id, 10)
             const response = await new Promise((resolve, reject) => {
-                const query = "UPDATE names SETna"
+                const query = "UPDATE names SET name = ? WHERE "
                 connection.query(query, [id], (err, result) => {
                     if (err) {
                         console.error('Error executing query:', err.message);
