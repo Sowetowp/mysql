@@ -48,8 +48,8 @@ class DbService {
                     resolve(result.insertId)
                 })
             })
-            console.log(response)
-            return response
+            console.log(insertId)
+            // return response
         } catch (error) {
             console.log(error)
         }
