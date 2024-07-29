@@ -29,7 +29,7 @@ function insertRowIntoTable(data) {
     for (var keys in data) {
         if (data.hasOwnProperty(keys)) {
             if (keys === "dateAdded") {
-                data[keys] = new Date(data[keys].toLocaleString())
+                data[keys] = new Date(data[keys]).toLocaleString()
             }
             tableHtml += `<td>${data[keys]}</td>`
         }
