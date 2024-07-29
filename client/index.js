@@ -9,7 +9,7 @@ const addBtn = document.querySelector("#add-name-btn")
 addBtn.onclick = function () {
     const nameInput = document.querySelector("#nameInput")
     const name = nameInput.value
-    n
+    console.log(name)
     nameInput.value = ""
 
     fetch('http://localhost:5000/insert', {
