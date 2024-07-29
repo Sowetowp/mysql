@@ -53,7 +53,7 @@ class DbService {
                 });
             });
             console.log('Insert ID:', insertId);
-            return insertId; // Optional: return the insertId if needed
+            return {insertId}; // Optional: return the insertId if needed
         } catch (error) {
             console.error('Error:', error.message);
         }
