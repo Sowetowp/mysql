@@ -77,9 +77,8 @@ class DbService {
                 });
             });
             console.log(response)
-            
         } catch (error) {
-            
+            console.log(err)
         }
     }
 }
