@@ -10,7 +10,7 @@ document.querySelector("table tbody").addEventListener("click", function (event)
         deleteRow(event.target.dataset.id)
     }
     if (event.target.className === "edit-row-btn") {
-        deleteRow(event.target.dataset.id)
+        editRow(event.target.dataset.id)
     }
 })
 
