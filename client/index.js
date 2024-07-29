@@ -15,6 +15,8 @@ function deleteRow(id) {
     fetch(`http://localhost:5000/delete/${id}`), {
         method: "DELETE"
     }
+        .then(res => res.json())
+        .then(data => loadHtmlTable(data["data"]))
 }
 
 const addBtn = document.querySelector("#add-name-btn")
