@@ -46,13 +46,13 @@ updateBtn.onclick = function () {
             name: name.value
         })
     })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            location.reload()
+        }
+    })
     console.log(name.dataset.id)
-        .then(res => res.json())
-        .then(data => {
-            if (data.success) {
-                location.reload()
-            }
-        })
 }
 
 const addBtn = document.querySelector("#add-name-btn")
