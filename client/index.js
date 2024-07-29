@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-d
+document.querySelector()
 
 const addBtn = document.querySelector("#add-name-btn")
 addBtn.onclick = function () {
