@@ -31,7 +31,7 @@ function deleteRow(id) {
 function handleEditRow(id) {
     const updateSection = document.querySelector("#update-row")
     updateSection.hidden = false
-    document.querySelector("#update-row-btn")
+    document.querySelector("#update-row-btn").dataset.id = id
     // fetch(`http://localhost:5000/delete/${id}`, {
     //     method: "DELETE"
     // })
