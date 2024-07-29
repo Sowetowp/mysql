@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 document.querySelector("table tbody").addEventListener("click", function (event) {
-    if(event.target.className === "delete-row-btn"){
-deleteRow(event.target.dataSet.id)
+    if (event.target.className === "delete-row-btn") {
+        deleteRow(event.target.dataSet.id)
     }
 })
 
-function deleteRow(id){
+function deleteRow(id) {
 
 }
 
