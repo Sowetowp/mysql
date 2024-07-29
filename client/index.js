@@ -12,9 +12,9 @@ document.querySelector("table tbody").addEventListener("click", function (event)
 })
 
 function deleteRow(id) {
-    fetch(`http://localhost:5000/delete/${id}`), {
+    fetch(`http://localhost:5000/delete/${id}`, {
         method: "DELETE"
-    }
+    })
         .then(res => res.json())
         .then(data => loadHtmlTable(data["data"]))
 }
