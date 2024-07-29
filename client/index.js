@@ -16,7 +16,7 @@ function deleteRow(id) {
         method: "DELETE"
     })
         .then(res => res.json())
-        .then(data => loadHtmlTable(data["data"]))
+        .then(data => console.log(data))
 }
 
 const addBtn = document.querySelector("#add-name-btn")
