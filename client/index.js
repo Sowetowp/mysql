@@ -15,7 +15,7 @@ addBtn.onclick = function (){
         headers: {
             "Content-type": 'application/json'
         },
-        body: 
+        body: JSON.stringify({name: name})
     })
 }
 
