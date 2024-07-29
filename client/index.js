@@ -9,6 +9,9 @@ document.querySelector("table tbody").addEventListener("click", function (event)
     if (event.target.className === "delete-row-btn") {
         deleteRow(event.target.dataset.id)
     }
+    if (event.target.className === "delete-row-btn") {
+        deleteRow(event.target.dataset.id)
+    }
 })
 
 function deleteRow(id) {
