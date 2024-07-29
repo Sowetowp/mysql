@@ -41,7 +41,7 @@ updateBtn.onclick = function () {
         body: JSON.stringify({
             id: name.dataset.id,
             name: name.value
-         })
+        })
     })
         .then(res => res.json())
         .then(data => insertRowIntoTable(data["data"]))
