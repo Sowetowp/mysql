@@ -22,7 +22,7 @@ function deleteRow(id) {
     })
         .then(res => res.json())
         .then(data => {
-            if(data.success){
+            if (data.success) {
                 location.reload()
             }
         })
@@ -34,8 +34,8 @@ function handleEditRow(id) {
     document.querySelector("#update-row-btn").dataset.id = id
 }
 
-updateBtn.onclick = function(){
-const name = document.querySelector("#update-name-input")
+updateBtn.onclick = function () {
+    const name = document.querySelector("#update-name-input")
 }
 
 const addBtn = document.querySelector("#add-name-btn")
