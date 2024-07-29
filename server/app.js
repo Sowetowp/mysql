@@ -33,10 +33,10 @@ app.get("/getAll", (req, res) => {
 app.patch("/update", (req, res) => {
     const {id, name} = req.body
     let db = dbService.getDbServiceInstance()
-    const result = db.deleteRow(id)
-    result
-        .then(data => res.json({ success: data }))
-        .catch(err => console.log(err))
+    // const result = db.deleteRow(id)
+    // result
+    //     .then(data => res.json({ success: data }))
+    //     .catch(err => console.log(err))
 })
 
 // delete
