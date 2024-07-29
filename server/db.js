@@ -43,7 +43,7 @@ class DbService {
             const dateAdded = new Date();
             const insertId = await new Promise((resolve, reject) => {
                 const query = "ALTER TABLE names MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT;"
-                connection.query(query, [name, dateAdded], (err, result) => {
+                connection.query(query, (err, result) => {
                     if (err) {
                         console.error('Error executing query:', err.message);
                         reject(new Error(err.message));
