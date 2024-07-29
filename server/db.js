@@ -38,24 +38,20 @@ class DbService {
             console.log(error)
         }
     }
-    async function insertNewName(name) {
+    async insertNewName(name) {
         try {
-            const dateAdded = new Date();
+            const dateAdded = new Date()
             const insertId = await new Promise((resolve, reject) => {
                 const query = "INSERT INTO names (name, date_added) VALUES (?,?);"
                 connection.query(query, [name, dateAdded], (err, result) => {
-                    if (err) {
-                        console.error('Error executing query:', err.message);
-                        reject(new Error(err.message));
-                    } else {
-                        resolve(result.insertId);
-                    }
-                });
-            });
-            console.log('Insert ID:', insertId);
-            return insertId; // Optional: return the insertId if needed
+                    if (err) reject(new Error(err.message))
+                    resolve(result.insertId)
+                })
+            })
+            console.log(insertId)
+            // return response
         } catch (error) {
-            console.error('Error:', error.message);
+            console.log(error)
         }
     }
 }
