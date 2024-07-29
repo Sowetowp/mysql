@@ -82,8 +82,8 @@ class DbService {
             return false
         }
     }
-    async updateRow(){
-        
+    async updateRow(id, name){
+
     }
 }
 
