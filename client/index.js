@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 const addBtn = document.querySelector("#add-name-btn")
-addBtn.onclick = function 
+addBtn.onclick = function (){
+    
+}
 
 function loadHtmlTable(data) {
     const table = document.querySelector('table tbody')
