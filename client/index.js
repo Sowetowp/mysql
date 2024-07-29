@@ -27,7 +27,7 @@ function deleteRow(id) {
 }
 
 function editRow(id) {
-    const updateSection = document.querySelector("#update-section")
+    const updateSection = document.querySelector("#update-row")
     updateSection.hidden = false
     fetch(`http://localhost:5000/delete/${id}`, {
         method: "DELETE"
