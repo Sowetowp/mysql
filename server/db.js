@@ -92,7 +92,7 @@ class DbService {
                         console.error('Error executing query:', err.message);
                         reject(new Error(err.message));
                     } else {
-                        resolve(result.affectedRows);
+                        resolve(result);
                     }
                 });
             });
