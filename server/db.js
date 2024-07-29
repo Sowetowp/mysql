@@ -63,7 +63,7 @@ class DbService {
         }
     }
     async deleteRow(id){
-        
+        id = parseInt(id, 10)
     }
 }
 
