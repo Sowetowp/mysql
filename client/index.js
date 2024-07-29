@@ -22,14 +22,16 @@ addBtn.onclick = function () {
         .then(data => insertRowIntoTable(data["data"]))
 }
 
-function insertRowIntoTable (data){
+function insertRowIntoTable(data) {
     const table = document.querySelector('table tbody')
     const isTableData = document.querySelector(".no-data")
     let tableHtml = "<tr>"
-    for(var keys in data){
-if(data.hasOwnProperty(keys))
+    for (var keys in data) {
+        if (data.hasOwnProperty(keys)) {
+if(keys === dateAdded)
+        }
     }
-    data.forEach(function({id, name, dateAdded}){
+    data.forEach(function ({ id, name, dateAdded }) {
         tableHtml += `<td>${id}</td>`
         tableHtml += `<td>${name}</td>`
         tableHtml += `<td>${new Date(dateAdded).toLocaleString()}</td>`
@@ -37,9 +39,9 @@ if(data.hasOwnProperty(keys))
         tableHtml += `<td><button class='edit-row-btn' data-id=${id}>edit</button></td>`
     });
     tableHtml = "</tr>"
-    if(isTableData){
+    if (isTableData) {
         table.innerHTML = tableHtml
-    }else{
+    } else {
         const newRow = table.insertRow()
         newRow.innerHTML = tableHtml
     }
@@ -53,7 +55,7 @@ function loadHtmlTable(data) {
         return
     }
     let tableHtml = ""
-    data.forEach(function({id, name, date_added}){
+    data.forEach(function ({ id, name, date_added }) {
         tableHtml += "<tr>"
         tableHtml += `<td>${id}</td>`
         tableHtml += `<td>${name}</td>`
