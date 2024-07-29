@@ -42,7 +42,7 @@ function editRow(id) {
     //     })
 }
 
-updateBtn.onclick
+updateBtn.onclick = function
 
 const addBtn = document.querySelector("#add-name-btn")
 addBtn.onclick = function () {
