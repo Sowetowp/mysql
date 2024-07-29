@@ -10,7 +10,7 @@ document.querySelector("table tbody").addEventListener("click", function (event)
         deleteRow(event.target.dataset.id)
     }
     if (event.target.className === "edit-row-btn") {
-        editRow(event.target.dataset.id)
+        handleEditRow(event.target.dataset.id)
     }
 })
 
@@ -43,7 +43,7 @@ function editRow(id) {
 }
 
 updateBtn.onclick = function(){
-    
+
 }
 
 const addBtn = document.querySelector("#add-name-btn")
