@@ -44,7 +44,9 @@ updateBtn.onclick = function () {
         })
     })
         .then(res => res.json())
-        .then(data => insertRowIntoTable(data["data"]))
+        .then(data => {
+            
+        })
 }
 
 const addBtn = document.querySelector("#add-name-btn")
