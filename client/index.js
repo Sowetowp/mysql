@@ -26,7 +26,7 @@ function insertRowIntoTable (data){
     const table = document.querySelector('table tbody')
     const isTableData = document.querySelector(".no-data")
     let tableHtml = "<tr>"
-    data.forEach(function({id, name, date_added}){
+    data.forEach(function({id, name, dateAdded}){
         tableHtml += `<td>${id}</td>`
         tableHtml += `<td>${name}</td>`
         tableHtml += `<td>${new Date(dateAdded).toLocaleString()}</td>`
