@@ -83,7 +83,24 @@ class DbService {
         }
     }
     async updateRow(id, name){
-
+        try {
+            id = parseInt(id, 10)
+            const response = await new Promise((resolve, reject) => {
+                const query = "DELETE FROM names WHERE id = ?"
+                connection.query(query, [id], (err, result) => {
+                    if (err) {
+                        console.error('Error executing query:', err.message);
+                        reject(new Error(err.message));
+                    } else {
+                        resolve(result.affectedRows);
+                    }
+                });
+            });
+            return response === 1 ? true : false
+        } catch (error) {
+            console.log(error)
+            return false
+        }
     }
 }
 
