@@ -23,7 +23,7 @@ addBtn.onclick = function () {
 }
 
 function insertRowIntoTable (data){
-
+    
 }
 
 function loadHtmlTable(data) {
