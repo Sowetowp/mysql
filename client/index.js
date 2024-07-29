@@ -16,7 +16,11 @@ function deleteRow(id) {
         method: "DELETE"
     })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+            if(data.success){
+                
+            }
+        })
 }
 
 const addBtn = document.querySelector("#add-name-btn")
