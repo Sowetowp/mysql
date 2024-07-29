@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
 })
 
-
+const addBtn = document.querySelector("#")
 function loadHtmlTable(data) {
     const table = document.querySelector('table tbody')
     console.log(data)
