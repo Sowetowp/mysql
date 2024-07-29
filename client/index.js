@@ -36,6 +36,15 @@ function handleEditRow(id) {
 
 updateBtn.onclick = function () {
     const name = document.querySelector("#update-name-input")
+    fetch('http://localhost:5000/insert', {
+        headers: {
+            "Content-type": 'application/json'
+        },
+        method: "POST",
+        body: JSON.stringify({ name: name })
+    })
+        .then(res => res.json())
+        .then(data => insertRowIntoTable(data["data"]))
 }
 
 const addBtn = document.querySelector("#add-name-btn")
