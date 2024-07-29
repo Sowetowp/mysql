@@ -102,6 +102,7 @@ class DbService {
             return false
         }
     }
+    as
 }
 
 module.exports = DbService
