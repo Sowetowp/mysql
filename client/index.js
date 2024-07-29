@@ -12,7 +12,9 @@ addBtn.onclick = function (){
     nameInput.value = ""
 
     fetch('http://localhost:5000/insert', {
-        headers: 
+        headers: {
+            "Content-type": 
+        }
     })
 }
 
