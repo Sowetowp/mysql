@@ -82,7 +82,7 @@ class DbService {
             return false
         }
     }
-    async updateRow(id, name){
+    async updateRow(id, name) {
         try {
             id = parseInt(id, 10)
             const response = await new Promise((resolve, reject) => {
@@ -102,11 +102,11 @@ class DbService {
             return false
         }
     }
-    async search(name){
+    async search(name) {
         try {
             const response = await new Promise((resolve, reject) => {
                 const query = "SELECT * FROM names WHERE name = ?;"
-                connection.query(query,[name], (err, result) => {
+                connection.query(query, [name], (err, result) => {
                     if (err) reject(new Error(err.message))
                     resolve(result)
                 })
