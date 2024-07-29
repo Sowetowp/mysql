@@ -25,7 +25,6 @@ addBtn.onclick = function () {
 function insertRowIntoTable(data) {
     const table = document.querySelector('table tbody')
     const isTableData = document.querySelector(".no-data")
-    console.log(isTableData)
     let tableHtml = "<tr>"
     for (var keys in data) {
         if (data.hasOwnProperty(keys)) {
