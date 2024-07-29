@@ -35,7 +35,7 @@ app.get("/getAll", (req, res) => {
 app.delete("/delete/:id", (req, res) => {
     const {id} = req.params
     let db = dbService.getDbServiceInstance()
-    const result = db.deleteRow()
+    const result = db.deleteRow(id)
     result
         .then(data => res.json({ data: data }))
         .catch(err => console.log(err))
