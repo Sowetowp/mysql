@@ -102,7 +102,7 @@ class DbService {
             return false
         }
     }
-    as
+    async search
 }
 
 module.exports = DbService
