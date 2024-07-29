@@ -38,7 +38,10 @@ updateBtn.onclick = function () {
     const name = document.querySelector("#update-name-input")
     fetch('http://localhost:5000/update', {
         method: "PATCH",
-        body: JSON.stringify({ name: name })
+        body: JSON.stringify({
+            id: name.dataset.id,
+            name: name.value
+         })
     })
         .then(res => res.json())
         .then(data => insertRowIntoTable(data["data"]))
