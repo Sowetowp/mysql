@@ -14,7 +14,8 @@ addBtn.onclick = function (){
     fetch('http://localhost:5000/insert', {
         headers: {
             "Content-type": 'application/json'
-        }
+        },
+        body: 
     })
 }
 
