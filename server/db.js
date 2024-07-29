@@ -111,7 +111,6 @@ class DbService {
                     resolve(result)
                 })
             })
-            console.log(response)
             return response
         } catch (error) {
             console.log(error)
