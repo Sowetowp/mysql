@@ -31,12 +31,13 @@ app.get("/getAll", (req, res) => {
 
 // update
 app.patch("/update", (req, res) => {
-    const {id, name} = req.body
-    let db = dbService.getDbServiceInstance()
-    const result = db.updateRow(id, name)
-    result
-        .then(data => res.json({ success: data }))
-        .catch(err => console.log(err))
+    console.log(req.body)
+    // const {id, name} = req.body
+    // let db = dbService.getDbServiceInstance()
+    // const result = db.updateRow(id, name)
+    // result
+    //     .then(data => res.json({ success: data }))
+    //     .catch(err => console.log(err))
 })
 
 // delete
