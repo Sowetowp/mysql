@@ -62,7 +62,7 @@ class DbService {
             console.error('Error:', error.message);
         }
     }
-    async deleteRow(id){
+    async deleteRow(id) {
         try {
             id = parseInt(id, 10)
             const response = await new Promise((resolve, reject) => {
@@ -78,7 +78,7 @@ class DbService {
             });
             console.log(response)
         } catch (error) {
-            console.log(err)
+            console.log(error)
         }
     }
 }
