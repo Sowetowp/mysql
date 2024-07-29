@@ -43,7 +43,7 @@ updateBtn.onclick = function () {
             "Content-type": 'application/json'
         },
         body: JSON.stringify({
-            id: updateNameInput.dataset.id,
+            id: updateBtn.dataset.id,
             name: updateNameInput.value
         })
     })
