@@ -92,12 +92,11 @@ class DbService {
                         console.error('Error executing query:', err.message);
                         reject(new Error(err.message));
                     } else {
-                        resolve(result);
+                        resolve(result.affectedRows);
                     }
                 });
             });
-            // return response === 1 ? true : false
-            console.log(response)
+            return response === 1 ? true : false
         } catch (error) {
             console.log(error)
             return false
