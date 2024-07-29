@@ -37,5 +37,9 @@ function loadHtmlTable(data) {
     data.forEach(function({id, name, date_added}){
         tableHtml += "<tr>"
         tableHtml += `<td>${id}</td>`
+        tableHtml += `<td>${name}</td>`
+        tableHtml += `<td>${date_added}</td>`
+        tableHtml += `<td>${id}</td>`
+        tableHtml += `<td>${id}</td>`
     });
 }
