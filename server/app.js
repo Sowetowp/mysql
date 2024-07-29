@@ -50,5 +50,5 @@ app.delete("/delete/:id", (req, res) => {
 })
 
 
-app.search()
+app.get("/search/:name")
 app.listen(process.env.PORT, () => { console.log("app is running") })
