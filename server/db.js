@@ -96,7 +96,8 @@ class DbService {
                     }
                 });
             });
-            return response === 1 ? true : false
+            // return response === 1 ? true : false
+            console.log(response)
         } catch (error) {
             console.log(error)
             return false
