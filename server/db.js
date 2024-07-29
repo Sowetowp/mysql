@@ -38,7 +38,9 @@ class DbService {
             console.log(error)
         }
     }
-    
+    async insertNewName (){
+        
+    }
 }
 
 module.exports = DbService
