@@ -11,7 +11,9 @@ addBtn.onclick = function (){
     const name = nameInput.value
     nameInput.value = ""
 
-    fetch('http://localhost:5000/insert', h)
+    fetch('http://localhost:5000/insert', {
+        headers: 
+    })
 }
 
 function loadHtmlTable(data) {
