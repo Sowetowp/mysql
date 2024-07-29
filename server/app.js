@@ -14,10 +14,10 @@ app.use(express.urlencoded({ extended: false }))
 app.post("/insert", (req, res) => {
     const { name } = req.body
     let db = dbService.getDbServiceInstance()
-    const result =db.insertNewName(name)
+    const result = db.insertNewName(name)
     result
-    .then(data=>res.json({data: data}))
-    .catch(err=>console.log(err))
+        .then(data => res.json({ data: data }))
+        .catch(err => console.log(err))
 })
 
 // read
@@ -32,8 +32,8 @@ app.get("/getAll", (req, res) => {
 // update
 
 // delete
-app.delete("delete/:id", (req, res)=>{
-
+app.delete("/delete/:id", (req, res) => {
+    console.log(req.params)
 })
 
 app.listen(process.env.PORT, () => { console.log("app is running") })
