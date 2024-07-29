@@ -64,23 +64,23 @@ class DbService {
     }
     async deleteRow(id){
         try {
+            id = parseInt(id, 10)
+            const response = await new Promise((resolve, reject) => {
+                const query = "DELETE FROM names WHERE id = ?"
+                connection.query(query, [id], (err, result) => {
+                    if (err) {
+                        console.error('Error executing query:', err.message);
+                        reject(new Error(err.message));
+                    } else {
+                        resolve(result);
+                    }
+                });
+            });
+            console.log(response)
             
         } catch (error) {
             
         }
-        id = parseInt(id, 10)
-        const response = await new Promise((resolve, reject) => {
-            const query = "DELETE FROM names WHERE id = ?"
-            connection.query(query, [id], (err, result) => {
-                if (err) {
-                    console.error('Error executing query:', err.message);
-                    reject(new Error(err.message));
-                } else {
-                    resolve(result);
-                }
-            });
-        });
-        console.log(response)
     }
 }
 
