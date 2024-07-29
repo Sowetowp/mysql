@@ -64,14 +64,14 @@ class DbService {
     }
     async deleteRow(id){
         id = parseInt(id, 10)
-        const insertId = await new Promise((resolve, reject) => {
+        const response = await new Promise((resolve, reject) => {
             const query = "INSERT INTO names (name, date_added) VALUES (?,?);"
             connection.query(query, [name, dateAdded], (err, result) => {
                 if (err) {
                     console.error('Error executing query:', err.message);
                     reject(new Error(err.message));
                 } else {
-                    resolve(result.insertId);
+                    resolve(result);
                 }
             });
         });
