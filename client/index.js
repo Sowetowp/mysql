@@ -22,6 +22,8 @@ addBtn.onclick = function () {
         .then(data => )
 }
 
+
+
 function loadHtmlTable(data) {
     const table = document.querySelector('table tbody')
     console.log(data)
