@@ -36,6 +36,6 @@ function loadHtmlTable(data) {
     let tableHtml = ""
     data.forEach(function({id, name, date_added}){
         tableHtml += "<tr>"
-        tableHtml += "<td></td>"
+        tableHtml += `<td>${id}</td>`
     });
 }
