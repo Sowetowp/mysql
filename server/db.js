@@ -79,6 +79,7 @@ class DbService {
             return response === 1 ? true : false
         } catch (error) {
             console.log(error)
+            return false
         }
     }
 }
