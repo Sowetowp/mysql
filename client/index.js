@@ -38,7 +38,7 @@ function insertRowIntoTable (data){
         table.innerHTML = tableHtml
     }else{
         const newRow = table.insertRow()
-        newRow.innerHTML = 
+        newRow.innerHTML = tableHtml
     }
 }
 
