@@ -24,7 +24,7 @@ addBtn.onclick = function () {
 
 function insertRowIntoTable (data){
     const table = document.querySelector('table tbody')
-    const isTableData
+    const isTableData = 
 }
 
 function loadHtmlTable(data) {
