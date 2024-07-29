@@ -41,6 +41,7 @@ updateBtn.onclick = function () {
         headers: {
             "Content-type": 'application/json'
         },
+        console.log(name.dataset.id)
         body: JSON.stringify({
             id: name.dataset.id,
             name: name.value
