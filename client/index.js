@@ -18,6 +18,8 @@ addBtn.onclick = function () {
         method: "POST",
         body: JSON.stringify({ name: name })
     })
+    .then(res => res.json())
+        .then(data => loadHtmlTable(data["data"]))
 }
 
 function loadHtmlTable(data) {
