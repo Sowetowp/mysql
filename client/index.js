@@ -33,8 +33,8 @@ function loadHtmlTable(data) {
         table.innerHTML = "<tr><td class='no-data' colspan='5'>No Data</td></tr>"
         return
     }
-    // let tableHtml = ""
+    let tableHtml = ""
     data.forEach(function({id, name, date_added}){
-
+        tableHtml += ""
     });
 }
