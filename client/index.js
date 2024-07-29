@@ -37,7 +37,7 @@ function insertRowIntoTable (data){
     if(isTableData){
         table.innerHTML = tableHtml
     }else{
-        
+        const newRow = 
     }
 }
 
