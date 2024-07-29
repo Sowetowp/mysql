@@ -30,10 +30,10 @@ function deleteRow(id) {
 
 function handleEditRow(id) {
     console.log(id)
-    console.log(document.querySelector("#update-row-btn").dataset.id)
     const updateSection = document.querySelector("#update-row")
     updateSection.hidden = false
     document.querySelector("#update-row-btn").dataset.id = id
+    console.log(document.querySelector("#update-row-btn").dataset.id)
 }
 
 updateBtn.onclick = function () {
