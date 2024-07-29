@@ -19,7 +19,7 @@ addBtn.onclick = function () {
         body: JSON.stringify({ name: name })
     })
         .then(res => res.json())
-        .then(data => insertRowIntoTable(data))
+        .then(data => insertRowIntoTable(data["data"]))
 }
 
 function insertRowIntoTable (data){
