@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 const addBtn = document.querySelector("#add-name-btn")
+
 addBtn.onclick = function () {
     const nameInput = document.querySelector("#nameInput")
     const name = nameInput.value
