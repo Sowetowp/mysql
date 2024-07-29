@@ -45,7 +45,7 @@ class DbService {
                 const query = "INSERT INTO names (name, date_added) VALUES (?,?);"
                 connection.query(query, [name, dateAdded], (err, result) => {
                     if (err) reject(new Error(err.message))
-                    resolve(result)
+                    resolve(result.insertId)
                 })
             })
             console.log(response)
