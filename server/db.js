@@ -63,6 +63,11 @@ class DbService {
         }
     }
     async deleteRow(id){
+        try {
+            
+        } catch (error) {
+            
+        }
         id = parseInt(id, 10)
         const response = await new Promise((resolve, reject) => {
             const query = "DELETE FROM names WHERE id = ?"
