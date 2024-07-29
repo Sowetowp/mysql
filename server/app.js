@@ -17,7 +17,7 @@ app.post("/insert", (req, res) => {
     const result =db.insertNewName(name)
     result
     .then(data=>res.json({success: true}))
-    .catch(err=>)
+    .catch(err=>console.log(err))
 })
 
 // read
