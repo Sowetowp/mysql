@@ -34,6 +34,7 @@ function insertRowIntoTable (data){
         tableHtml += `<td><button class='edit-row-btn' data-id=${id}>edit</button></td>`
     });
     tableHtml = "</tr>"
+    I
 }
 
 function loadHtmlTable(data) {
