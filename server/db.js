@@ -38,8 +38,12 @@ class DbService {
             console.log(error)
         }
     }
-    async insertNewName (name){
+    async insertNewName(name) {
+        try {
 
+        } catch (error) {
+
+        }
     }
 }
 
