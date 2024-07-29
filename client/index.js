@@ -35,7 +35,7 @@ function handleEditRow(id) {
 }
 
 updateBtn.onclick = function () {
-    const name = document.querySelector("#update-name-input")
+    const updateNAME = document.querySelector("#update-name-input")
     console.log(name.dataset.id)
     fetch('http://localhost:5000/update', {
         method: "PATCH",
