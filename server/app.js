@@ -51,7 +51,8 @@ app.delete("/delete/:id", (req, res) => {
 
 
 app.get("/search/:name", (req, res)=>{
-
+    const {name} = req.params
+    let db = dbService.getDbServiceInstance()
 })
 
 
