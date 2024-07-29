@@ -35,6 +35,8 @@ function insertRowIntoTable (data){
     });
     tableHtml = "</tr>"
     if(isTableData){
+        table.innerHTML = tableHtml
+    }else{
         
     }
 }
