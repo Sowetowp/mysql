@@ -31,7 +31,7 @@ function insertRowIntoTable(data) {
             if (keys === "dateAdded") {
                 data[keys] = new Date(data[keys].toLocaleString())
             }
-            tableHtml += `<td>${data[k]}</td>`
+            tableHtml += `<td>${data[keys]}</td>`
         }
     }
     data.forEach(function ({ id, name, dateAdded }) {
