@@ -38,6 +38,7 @@ class DbService {
             console.log(error)
         }
     }
+    
 }
 
 module.exports = DbService
