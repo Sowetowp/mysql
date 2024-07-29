@@ -37,13 +37,13 @@ function insertRowIntoTable(data) {
     tableHtml += `<td><button class='delete-row-btn' data-id=${id}>delete</button></td>`
     tableHtml += `<td><button class='edit-row-btn' data-id=${id}>edit</button></td>`
     
-    data.forEach(function ({ id, name, dateAdded }) {
-        tableHtml += `<td>${id}</td>`
-        tableHtml += `<td>${name}</td>`
-        tableHtml += `<td>${new Date(dateAdded).toLocaleString()}</td>`
-        tableHtml += `<td><button class='delete-row-btn' data-id=${id}>delete</button></td>`
-        tableHtml += `<td><button class='edit-row-btn' data-id=${id}>edit</button></td>`
-    });
+    // data.forEach(function ({ id, name, dateAdded }) {
+    //     tableHtml += `<td>${id}</td>`
+    //     tableHtml += `<td>${name}</td>`
+    //     tableHtml += `<td>${new Date(dateAdded).toLocaleString()}</td>`
+    //     tableHtml += `<td><button class='delete-row-btn' data-id=${id}>delete</button></td>`
+    //     tableHtml += `<td><button class='edit-row-btn' data-id=${id}>edit</button></td>`
+    // });
     tableHtml = "</tr>"
     if (isTableData) {
         table.innerHTML = tableHtml
