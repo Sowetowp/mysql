@@ -35,7 +35,7 @@ function handleEditRow(id) {
 }
 
 updateBtn.onclick = function(){
-
+const name = document.querySelector("")
 }
 
 const addBtn = document.querySelector("#add-name-btn")
