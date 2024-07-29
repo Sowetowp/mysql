@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: false }))
 // create
 app.post("/insert", (req, res) => {
     const { name } = req.body
+    let db = dbService.getDbServiceInstance()
 })
 
 // read
