@@ -28,9 +28,9 @@ function insertRowIntoTable(data) {
     let tableHtml = "<tr>"
     for (var keys in data) {
         if (data.hasOwnProperty(keys)) {
-if(keys === "dateAdded"){
-    data[keys] = new Date()
-}
+            if (keys === "dateAdded") {
+                data[keys] = new Date(data[keys].toLocaleString())
+            }
         }
     }
     data.forEach(function ({ id, name, dateAdded }) {
