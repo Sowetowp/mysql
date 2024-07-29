@@ -62,6 +62,9 @@ class DbService {
             console.error('Error:', error.message);
         }
     }
+    async deleteRow(id){
+        
+    }
 }
 
 module.exports = DbService
