@@ -82,6 +82,9 @@ class DbService {
             return false
         }
     }
+    async updateRow(){
+        
+    }
 }
 
 module.exports = DbService
