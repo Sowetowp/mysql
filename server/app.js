@@ -35,7 +35,10 @@ app.get("/getAll", (req, res) => {
 app.delete("/delete/:id", (req, res) => {
     const {id} = req.params
     let db = dbService.getDbServiceInstance()
-
+    const result = db.getAllData()
+    result
+        .then(data => res.json({ data: data }))
+        .catch(err => console.log(err))
 })
 
 app.listen(process.env.PORT, () => { console.log("app is running") })
