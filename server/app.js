@@ -32,6 +32,8 @@ app.get("/getAll", (req, res) => {
 // update
 
 // delete
-app.delete("delete", )
+app.delete("delete", (req, res)=>{
+    
+})
 
 app.listen(process.env.PORT, () => { console.log("app is running") })
