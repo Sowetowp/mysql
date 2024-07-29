@@ -27,7 +27,7 @@ function insertRowIntoTable (data){
     const isTableData = document.querySelector(".no-data")
     let tableHtml = "<tr>"
     for(var keys in data){
-
+if(data.hasOwn)
     }
     data.forEach(function({id, name, dateAdded}){
         tableHtml += `<td>${id}</td>`
