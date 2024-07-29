@@ -29,15 +29,15 @@ function deleteRow(id) {
 function editRow(id) {
     const updateSection = document.querySelector("#update-row")
     updateSection.hidden = false
-    fetch(`http://localhost:5000/delete/${id}`, {
-        method: "DELETE"
-    })
-        .then(res => res.json())
-        .then(data => {
-            if(data.success){
-                // location.reload()
-            }
-        })
+    // fetch(`http://localhost:5000/delete/${id}`, {
+    //     method: "DELETE"
+    // })
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         if(data.success){
+    //             location.reload()
+    //         }
+    //     })
 }
 
 const addBtn = document.querySelector("#add-name-btn")
