@@ -15,7 +15,8 @@ app.post("/insert", (req, res) => {
     const { name } = req.body
     let db = dbService.getDbServiceInstance()
     const result =db.insertNewName(name)
-    re
+    result
+    .then(data=>res.json({}))
 })
 
 // read
