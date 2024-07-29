@@ -37,7 +37,7 @@ function handleEditRow(id) {
 updateBtn.onclick = function () {
     const name = document.querySelector("#update-name-input")
     fetch('http://localhost:5000/update', {
-        method: "POST",
+        method: "PATCH",
         body: JSON.stringify({ name: name })
     })
         .then(res => res.json())
