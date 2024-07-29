@@ -75,7 +75,6 @@ class DbService {
                 }
             });
         });
-        console.log('Insert ID:', insertId);
     }
 }
 
