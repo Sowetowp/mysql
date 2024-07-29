@@ -14,6 +14,8 @@ document.querySelector("table tbody").addEventListener("click", function (event)
     }
 })
 
+updateBtn =
+
 function deleteRow(id) {
     fetch(`http://localhost:5000/delete/${id}`, {
         method: "DELETE"
