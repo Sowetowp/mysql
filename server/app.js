@@ -49,4 +49,6 @@ app.delete("/delete/:id", (req, res) => {
         .catch(err => console.log(err))
 })
 
+
+app.search()
 app.listen(process.env.PORT, () => { console.log("app is running") })
