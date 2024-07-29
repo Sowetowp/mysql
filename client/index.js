@@ -25,7 +25,7 @@ addBtn.onclick = function () {
 function insertRowIntoTable (data){
     const table = document.querySelector('table tbody')
     const isTableData = document.querySelector(".no-data")
-    let tableHtml = ""
+    let tableHtml = "<tr>"
     data.forEach(function({id, name, date_added}){
         tableHtml += "<tr>"
         tableHtml += `<td>${id}</td>`
