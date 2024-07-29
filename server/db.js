@@ -105,7 +105,7 @@ class DbService {
     async search(name){
         try {
             const response = await new Promise((resolve, reject) => {
-                const query = "SELECT * FROM names W;"
+                const query = "SELECT * FROM names WHERE name = ?;"
                 connection.query(query, (err, result) => {
                     if (err) reject(new Error(err.message))
                     resolve(result)
