@@ -39,7 +39,7 @@ function loadHtmlTable(data) {
         tableHtml += `<td>${id}</td>`
         tableHtml += `<td>${name}</td>`
         tableHtml += `<td>${date_added}</td>`
-        tableHtml += `<td><button></td>`
+        tableHtml += `<td><button></button></td>`
         tableHtml += `<td>${id}</td>`
     });
 }
