@@ -26,6 +26,18 @@ function deleteRow(id) {
         })
 }
 
+function editRow(id) {
+    fetch(`http://localhost:5000/delete/${id}`, {
+        method: "DELETE"
+    })
+        .then(res => res.json())
+        .then(data => {
+            if(data.success){
+                location.reload()
+            }
+        })
+}
+
 const addBtn = document.querySelector("#add-name-btn")
 addBtn.onclick = function () {
     const nameInput = document.querySelector("#nameInput")
