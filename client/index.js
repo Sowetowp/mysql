@@ -17,7 +17,9 @@ document.querySelector("table tbody").addEventListener("click", function (event)
 const updateBtn = document.querySelector("#update-row-btn")
 const searchBtn = document.querySelector("#search-btn")
 
-searchBtn.onclick
+searchBtn.onclick = function(){
+    
+}
 
 function deleteRow(id) {
     fetch(`http://localhost:5000/delete/${id}`, {
