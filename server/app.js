@@ -53,6 +53,10 @@ app.delete("/delete/:id", (req, res) => {
 app.get("/search/:name", (req, res)=>{
     const {name} = req.params
     let db = dbService.getDbServiceInstance()
+    const result = db.getAllData()
+    result
+        .then(data => res.json({ data: data }))
+        .catch(err => console.log(err))
 })
 
 
