@@ -17,7 +17,7 @@ document.querySelector("table tbody").addEventListener("click", function (event)
 const updateBtn = document.querySelector("#update-row-btn")
 const searchBtn = document.querySelector("#search-btn")
 
-searchBtn.onclick = function(){
+searchBtn.onclick = function () {
     const searchValue = document.querySelector("#search-input").value
     fetch('http://localhost:5000/search/' + searchValue)
         .then(res => res.json())
@@ -54,12 +54,12 @@ updateBtn.onclick = function () {
             name: updateNameInput.value
         })
     })
-    .then(res => res.json())
-    .then(data => {
-        if (data.success) {
-            location.reload()
-        }
-    })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                location.reload()
+            }
+        })
 }
 
 const addBtn = document.querySelector("#add-name-btn")
