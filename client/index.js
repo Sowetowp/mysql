@@ -18,7 +18,7 @@ const updateBtn = document.querySelector("#update-row-btn")
 const searchBtn = document.querySelector("#search-btn")
 
 searchBtn.onclick = function(){
-    const search
+    const searchValue = document.querySelector("#")
 }
 
 function deleteRow(id) {
