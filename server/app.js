@@ -31,7 +31,7 @@ app.get("/getAll", (req, res) => {
 
 // update
 app.patch("/update", (req, res) => {
-    const {id, name} = req.body
+    const { id, name } = req.body
     let db = dbService.getDbServiceInstance()
     const result = db.updateRow(id, name)
     result
@@ -41,7 +41,7 @@ app.patch("/update", (req, res) => {
 
 // delete
 app.delete("/delete/:id", (req, res) => {
-    const {id} = req.params
+    const { id } = req.params
     let db = dbService.getDbServiceInstance()
     const result = db.deleteRow(id)
     result
@@ -50,8 +50,8 @@ app.delete("/delete/:id", (req, res) => {
 })
 
 
-app.get("/search/:name", (req, res)=>{
-    const {name} = req.params
+app.get("/search/:name", (req, res) => {
+    const { name } = req.params
     let db = dbService.getDbServiceInstance()
     const result = db.search(name)
     result
