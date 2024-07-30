@@ -19,7 +19,7 @@ const searchBtn = document.querySelector("#search-btn")
 
 searchBtn.onclick = function(){
     const searchValue = document.querySelector("#search-input").value
-    fetch('http://localhost:5000/search' + searchValue)
+    fetch('http://localhost:5000/search/' + searchValue)
         .then(res => res.json())
         .then(data => loadHtmlTable(data["data"]))
 }
