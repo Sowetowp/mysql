@@ -570,6 +570,10 @@ video {
   margin-left: auto;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
 .h-screen {
   height: 100vh;
 }
