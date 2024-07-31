@@ -14,7 +14,6 @@
     </main>
     <script>
         var i = 0;
-        var j = 0;
         var txt = 'This bot was designed specially for Dr. Killian to connect with his developers. We are available for any communication.';
         var speed = 50;
 
@@ -25,14 +24,6 @@
                 setTimeout(typeWriter, speed);
             }
         }
-        function typeWriter2() {
-            if (j < txt.length) {
-                document.getElementById("demo2").innerHTML += txt.charAt(j);
-                j++;
-                setTimeout(typeWriter2, speed);
-            }
-        }
-        setTimeout(typeWriter2(), 1000)
         typeWriter()
     </script>
 </body>
