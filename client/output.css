@@ -638,6 +638,10 @@ video {
   width: 1rem;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -716,6 +720,10 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.fill-white {
+  fill: #fff;
 }
 
 .px-3 {
