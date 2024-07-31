@@ -642,6 +642,10 @@ video {
   gap: 1.25rem;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
