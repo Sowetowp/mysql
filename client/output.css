@@ -562,6 +562,10 @@ video {
   position: relative;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .m-auto {
   margin: auto;
 }
