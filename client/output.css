@@ -590,6 +590,12 @@ video {
   max-width: 48rem;
 }
 
+.border-spacing-6 {
+  --tw-border-spacing-x: 1.5rem;
+  --tw-border-spacing-y: 1.5rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+}
+
 .text-pretty {
   text-wrap: pretty;
 }
