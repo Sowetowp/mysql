@@ -695,6 +695,11 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .text-\[16px\] {
   font-size: 16px;
 }
