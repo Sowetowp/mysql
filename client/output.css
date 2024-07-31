@@ -774,6 +774,11 @@ video {
   color: rgb(252 231 243 / var(--tw-text-opacity));
 }
 
+.text-pink-200 {
+  --tw-text-opacity: 1;
+  color: rgb(251 207 232 / var(--tw-text-opacity));
+}
+
 .outline-0 {
   outline-width: 0px;
 }
