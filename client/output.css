@@ -700,6 +700,10 @@ video {
   border-radius: 5rem;
 }
 
+.rounded-\[2rem\] {
+  border-radius: 2rem;
+}
+
 .border {
   border-width: 1px;
 }
