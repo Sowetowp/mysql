@@ -11,5 +11,19 @@
     <main class="h-screen bg-orange-500 w-full">
         <p class="font-light text-xs" id="demo"></p>
     </main>
+    <script>
+        var i = 0;
+        var txt = 'This bot was designed specially for Dr. Killian to connect with his developers. We are available for any communication.';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter()
+    </script>
 </body>
 </html>
