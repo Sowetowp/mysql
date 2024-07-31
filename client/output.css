@@ -610,6 +610,10 @@ video {
   min-height: 2.25rem;
 }
 
+.min-h-8 {
+  min-height: 2rem;
+}
+
 .w-screen {
   width: 100vw;
 }
