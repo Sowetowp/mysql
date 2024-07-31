@@ -935,6 +935,10 @@ video {
   outline-offset: 2px;
 }
 
+.outline-0 {
+  outline-width: 0px;
+}
+
 @media (min-width: 768px) {
   .md\:text-xs {
     font-size: 0.75rem;
