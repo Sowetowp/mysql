@@ -760,6 +760,11 @@ video {
   background-color: rgb(168 85 247 / var(--tw-bg-opacity));
 }
 
+.bg-purple-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
