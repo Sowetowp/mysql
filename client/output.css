@@ -650,6 +650,10 @@ video {
   overflow: auto;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
