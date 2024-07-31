@@ -849,6 +849,11 @@ button:active {
     flex-wrap: nowrap;
   }
 
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
