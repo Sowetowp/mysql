@@ -590,6 +590,10 @@ video {
   max-width: 48rem;
 }
 
+.text-pretty {
+  text-wrap: pretty;
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
