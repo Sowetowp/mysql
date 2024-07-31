@@ -22,13 +22,12 @@
             if (i < txt.length) {
                 document.getElementById("demo").innerHTML += txt.charAt(i);
                 i++;
-                setTimeout(typeWriter, speed);
             }
             if (i === txt.length && j < txt.length) {
                 document.getElementById("demo").innerHTML += txt.charAt(i);
                 i++;
-                setTimeout(typeWriter, speed);
             }
+            setTimeout(typeWriter, speed);
         }
         typeWriter()
     </script>
