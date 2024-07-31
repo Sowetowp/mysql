@@ -724,6 +724,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .text-pretty {
   text-wrap: pretty;
 }
