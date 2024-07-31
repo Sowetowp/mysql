@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="output.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main class="bg-purple-500 w-full">
         <section class="max-w-3xl m-auto w-full py-9 min-h-screen relative">
@@ -14,22 +16,24 @@
             <h1 class="text-white min-h-8" id="demo"></h1>
             <p class="font-light text-xs text-gray-100 min-h-16 w-[80%]" id="demo2"></p>
             <form>
-                
+                <div class="flex flex-wrap gap-5 md:flex-nowrap">
+                    <div class="flex flex-col w-1/2">
+                        <label for="" class="text-xs font-medium text-gray-100">Name</label>
+                        <input class="bg-transparent border text-[16px] md:text-xs py-1 outline-0 text-white px-3"
+                            type="text" name="" id="">
+                    </div>
+                    <div class="flex flex-col w-1/2">
+                        <label class="text-xs font-medium text-gray-100" for="">Secret</label>
+                        <input class="bg-transparent border text-[16px] md:text-xs py-1 outline-0 text-white px-3"
+                            type="password" name="" id="">
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-xs font-medium text-gray-100" for="">Comment</label>
+                    <textarea class="bg-transparent border text-[16px] md:text-xs py-1 outline-0 text-white px-3"
+                        name="" id=""></textarea>
+                </div>
             </form>
-            <div class="flex flex-wrap gap-5 md:flex-nowrap">
-                <div class="flex flex-col w-1/2">
-                    <label for="" class="text-xs font-medium text-gray-100">Name</label>
-                    <input class="bg-transparent border text-[16px] md:text-xs py-1 outline-0 text-white px-3" type="text" name="" id="">
-                </div>
-                <div class="flex flex-col w-1/2">
-                    <label class="text-xs font-medium text-gray-100" for="">Secret</label>
-                    <input class="bg-transparent border text-[16px] md:text-xs py-1 outline-0 text-white px-3" type="password" name="" id="">
-                </div>
-            </div>
-            <div class="flex flex-col">
-                <label class="text-xs font-medium text-gray-100" for="">Comment</label>
-                <textarea class="bg-transparent border text-[16px] md:text-xs py-1 outline-0 text-white px-3" name="" id=""></textarea>
-            </div>
             <div class="border-[8px] border-[#ce99ff] rounded-xl h-96">
 
             </div>
@@ -44,8 +48,8 @@
             speed: 50,
             element1: document.getElementById("demo"),
             element2: document.getElementById("demo2"),
-            
-            type: function() {
+
+            type: function () {
                 if (this.i < this.txt.length) {
                     this.element1.innerHTML += this.txt.charAt(this.i);
                     this.i++;
@@ -56,8 +60,9 @@
                 setTimeout(() => this.type(), this.speed);
             }
         };
-    
+
         typewriter.type();
     </script>
 </body>
+
 </html>
