@@ -13,23 +13,27 @@
         <p class="font-light text-xs text-white" id="demo2"></p>
     </main>
     <script>
-        var i = 0;
-        var j = 0;
-        var txt = 'This bot was designed specially for Dr. Killian to connect with his developers. We are available for any communication.';
-        var speed = 50;
-
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("demo").innerHTML += txt.charAt(i);
-                i++;
+        const typewriter = {
+            i: 0,
+            j: 0,
+            txt: 'Your text here', // Your text
+            speed: 50, // Speed in milliseconds
+            element1: document.getElementById("demo"),
+            element2: document.getElementById("demo2"),
+            
+            type: function() {
+                if (this.i < this.txt.length) {
+                    this.element1.innerHTML += this.txt.charAt(this.i);
+                    this.i++;
+                } else if (this.j < this.txt.length) {
+                    this.element2.innerHTML += this.txt.charAt(this.j);
+                    this.j++;
+                }
+                setTimeout(() => this.type(), this.speed);
             }
-            if (i === txt.length && j < txt.length) {
-                document.getElementById("demo2").innerHTML += txt.charAt(j);
-                j++;
-            }
-            setTimeout(typeWriter, speed);
-        }
-        typeWriter()
+        };
+    
+        typewriter.type(); // Call the function to start the typewriter effect
     </script>
 </body>
 </html>
