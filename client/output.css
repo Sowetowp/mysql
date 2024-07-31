@@ -684,6 +684,11 @@ video {
   background-color: transparent;
 }
 
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
