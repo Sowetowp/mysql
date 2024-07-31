@@ -810,6 +810,11 @@ video {
   color: rgb(88 28 135 / var(--tw-text-opacity));
 }
 
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 .outline-0 {
   outline-width: 0px;
 }
