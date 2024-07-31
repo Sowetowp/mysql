@@ -566,6 +566,10 @@ video {
   margin-top: 2.25rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .h-screen {
   height: 100vh;
 }
