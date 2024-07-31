@@ -704,6 +704,10 @@ video {
   border-radius: 2rem;
 }
 
+.rounded-\[1rem\] {
+  border-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
