@@ -734,6 +734,10 @@ video {
   fill: #fca5a5;
 }
 
+.fill-green-300 {
+  fill: #86efac;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
