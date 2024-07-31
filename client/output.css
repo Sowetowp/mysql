@@ -738,6 +738,10 @@ video {
   fill: #86efac;
 }
 
+.fill-red-400 {
+  fill: #f87171;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
