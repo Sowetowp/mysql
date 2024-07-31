@@ -654,6 +654,14 @@ video {
   min-height: 3rem;
 }
 
+.min-h-1 {
+  min-height: 0.25rem;
+}
+
+.min-h-16 {
+  min-height: 4rem;
+}
+
 .w-screen {
   width: 100vw;
 }
