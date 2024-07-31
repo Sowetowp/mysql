@@ -582,6 +582,10 @@ video {
   margin-right: auto;
 }
 
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+
 .h-screen {
   height: 100vh;
 }
