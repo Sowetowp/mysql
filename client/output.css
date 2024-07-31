@@ -850,6 +850,10 @@ button:active {
 }
 
 @media (min-width: 768px) {
+  .md\:min-h-16 {
+    min-height: 4rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
