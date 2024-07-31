@@ -688,6 +688,14 @@ video {
   border-radius: 3rem;
 }
 
+.rounded-\[rem\] {
+  border-radius: rem;
+}
+
+.rounded-\[4rem\] {
+  border-radius: 4rem;
+}
+
 .border {
   border-width: 1px;
 }
