@@ -948,6 +948,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
