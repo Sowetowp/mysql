@@ -750,7 +750,7 @@ button:hover {
 }
 
 button:focus div {
-  transform: translateY(-50px);
+  transform: translateY(-40px);
 }
 
 button p {
