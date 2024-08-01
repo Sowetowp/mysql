@@ -60,7 +60,7 @@ updateBtn.onclick = function () {
         return alert("Kindly fill all fields")
     }
     if(updateSecretInput !== updateBtn.dataset.secret){
-        return alert("")
+        return alert("Incorrect secret")
     }
     fetch('http://localhost:5000/update', {
         method: "PATCH",
