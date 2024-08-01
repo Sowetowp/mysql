@@ -90,7 +90,7 @@ addBtn.onclick = function () {
 function insertRowIntoTable(data) {
     const table = document.querySelector('table tbody')
     const isTableData = document.querySelector(".no-data")
-    let tableHtml = "<tr>"
+    let tableHtml = `<tr class="border-b">`
     for (var keys in data) {
         if (data.hasOwnProperty(keys)) {
             if (keys === "dateAdded") {
