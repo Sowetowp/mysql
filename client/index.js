@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 document.querySelector("table tbody").addEventListener("click", function (event) {
-    console.log(first)
+    console.log(event.target.classList)
     if (event.target.classList && event.target.classList.contains("delete-row-btn")) {
         console.log("first")
         deleteRow(event.target.dataset.id)
