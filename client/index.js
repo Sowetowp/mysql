@@ -77,7 +77,7 @@ addBtn.onclick = function () {
             "Content-type": 'application/json'
         },
         method: "POST",
-        body: JSON.stringify({ name: name })
+        body: JSON.stringify({ name: name, secret })
     })
         .then(res => res.json())
         .then(data => insertRowIntoTable(data["data"]))
