@@ -45,7 +45,9 @@ function handleEditRow(id) {
 updateBtn.onclick = function () {
     const updateNameInput = document.querySelector("#update-name-input")
     const updateCommentInput = document.querySelector("#update-comment-input")
-    
+    if(name === "" || secret==="" || comment === ""){
+        return alert("Kindly fill all fields")
+    }
     fetch('http://localhost:5000/update', {
         method: "PATCH",
         headers: {
