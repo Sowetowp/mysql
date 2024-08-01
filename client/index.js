@@ -145,7 +145,7 @@ function loadHtmlTable(data) {
         tableHtml += `<tr class="border-b">`
         tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${name}</td>`
         tableHtml += `<td class="py-3 px-3 text-xs text-white text-center">${comment}</td>`
-        tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${new Date(data.dateAdded).toLocaleString()}</td>`
+        tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${new Date(date_added).toLocaleString()}</td>`
         tableHtml += `
             <td class="py-3 edit-row-btn px-3 text-xs" data-id=${data.id}>
                 <svg class="w-3 fill-green-300 m-auto" viewBox="0 0 512 512">
