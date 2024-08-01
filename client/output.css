@@ -861,6 +861,11 @@ button:active {
   border-color: rgb(237 27 36 / var(--tw-border-opacity));
 }
 
+.focus-within\:border-\[\#ce99ff\]:focus-within {
+  --tw-border-opacity: 1;
+  border-color: rgb(206 153 255 / var(--tw-border-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:min-h-16 {
     min-height: 4rem;
