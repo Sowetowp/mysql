@@ -46,8 +46,8 @@ function handleEditRow(id) {
     document.querySelector("#update-row-btn").dataset.secret = id.secret;
     const updateNameInput = document.querySelector("#update-name-input")
     const updateCommentInput = document.querySelector("#update-comment-input")
-    updateCommentInput.value = updateBtn.dataset.comment;
-    updateNameInput.value = updateBtn.dataset.name;
+    updateCommentInput.value = id.comment;
+    updateNameInput.value = id.name;
 }
 
 updateBtn.onclick = function () {
