@@ -177,7 +177,7 @@ function loadHtmlTable(data) {
     // tableHtml += `<td><button class='edit-row-btn' data-id=${data.id}>edit</button></td>`
     tableHtml += "</tr>"
 
-        tableHtml += "<tr>"
+        // tableHtml += "<tr>"
         tableHtml += `<td>${id}</td>`
         tableHtml += `<td>${name}</td>`
         tableHtml += `<td>${new Date(date_added).toLocaleString()}</td>`
