@@ -26,6 +26,7 @@ searchBtn.onclick = function () {
 
 function deleteRow(id) {
     prompt("provide your secret key")
+    if()
     fetch(`http://localhost:5000/delete/${id.id}`, {
         method: "DELETE"
     })
