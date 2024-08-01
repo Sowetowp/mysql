@@ -31,7 +31,7 @@ app.get("/getAll", (req, res) => {
 
 // update
 app.patch("/update", (req, res) => {
-    const { id, name, secret } = req.body
+    const { id, name, comment } = req.body
     let db = dbService.getDbServiceInstance()
     const result = db.updateRow(id, name, secret)
     result
