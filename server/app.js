@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: false }))
 // create
 app.post("/insert", (req, res) => {
     const { name, secret, comment } = req.body
+    console.log(comment)
     let db = dbService.getDbServiceInstance()
     const result = db.insertNewName(name, secret, comment)
     result
