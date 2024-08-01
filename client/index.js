@@ -19,10 +19,9 @@ const searchBtn = document.querySelector("#search-btn")
 
 searchBtn.onclick = function () {
     const searchValue = document.querySelector("#search-input").value
-    console.log(searchv)
     fetch('http://localhost:5000/search/' + searchValue)
         .then(res => res.json())
-        .then(data => console.log(data["data"]))
+        .then(data => loadHtmlTable(data["data"]))
 }
 
 function deleteRow(id) {
