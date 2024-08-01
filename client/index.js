@@ -25,7 +25,7 @@ searchBtn.onclick = function () {
 }
 
 function deleteRow(id) {
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(`http://localhost:5000/delete/${id.id}`, {
         method: "DELETE"
     })
         .then(res => res.json())
