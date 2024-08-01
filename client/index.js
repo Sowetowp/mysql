@@ -40,7 +40,7 @@ function handleEditRow(id) {
     const updateSection = document.querySelector("#update-row")
     updateSection.hidden = false
     updateSection.classList.add("flex")
-    console.log(document.querySelector("#update-row-btn").dataset)
+    console.log(document.querySelector("#update-row-btn").dataset.id)
     document.querySelector("#update-row-btn").dataset.id = id
 }
 
