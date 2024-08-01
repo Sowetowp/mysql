@@ -59,7 +59,7 @@ console.log(updateBtn.dataset.secret)
     if (updateNameInput.value.trim() === "" || updateCommentInput.value.trim() === "") {
         return alert("Kindly fill all fields")
     }
-    if(updateSecretInput !== updateBtn.dataset.secret){
+    if(updateSecretInput.value !== updateBtn.dataset.secret){
         return alert("Incorrect secret")
     }
     fetch('http://localhost:5000/update', {
