@@ -167,11 +167,11 @@ function loadHtmlTable(data) {
         tableHtml += "</tr>"
 
         // tableHtml += "<tr>"
-        tableHtml += `<td>${id}</td>`
-        tableHtml += `<td>${name}</td>`
-        tableHtml += `<td>${new Date(date_added).toLocaleString()}</td>`
-        tableHtml += `<td><button class='delete-row-btn' data-id=${id}>delete</button></td>`
-        tableHtml += `<td><button class='edit-row-btn' data-id=${id}>edit</button></td>`
+        // tableHtml += `<td>${id}</td>`
+        // tableHtml += `<td>${name}</td>`
+        // tableHtml += `<td>${new Date(date_added).toLocaleString()}</td>`
+        // tableHtml += `<td><button class='delete-row-btn' data-id=${id}>delete</button></td>`
+        // tableHtml += `<td><button class='edit-row-btn' data-id=${id}>edit</button></td>`
     });
     table.innerHTML = tableHtml
 }
