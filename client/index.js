@@ -75,7 +75,7 @@ addBtn.onclick = function () {
     nameInput.value = "";
     secretInput.value = "";
     commentInput.value = "";
-console.log(comment)
+
     fetch('http://localhost:5000/insert', {
         headers: {
             "Content-type": 'application/json'
