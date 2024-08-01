@@ -94,15 +94,15 @@ function insertRowIntoTable(data) {
     tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data.name}</td>`
     tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data.comment}</td>`
     tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${new Date(data.dateAdded).toLocaleString()}</td>`
-    console.log(data)
-    for (var keys in data) {
-        if (data.hasOwnProperty(keys)) {
-            if (keys === "dateAdded") {
-                data[keys] = new Date(data[keys]).toLocaleString()
-            }
-            tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data[keys]}</td>`
-        }
-    }
+    // console.log(data)
+    // for (var keys in data) {
+    //     if (data.hasOwnProperty(keys)) {
+    //         if (keys === "dateAdded") {
+    //             data[keys] = new Date(data[keys]).toLocaleString()
+    //         }
+    //         tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data[keys]}</td>`
+    //     }
+    // }
     tableHtml += `<td><button class='delete-row-btn' data-id=${data.id}>delete</button></td>`
     tableHtml += `<td><button class='edit-row-btn' data-id=${data.id}>edit</button></td>`
     tableHtml += "</tr>"
