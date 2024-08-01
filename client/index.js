@@ -152,7 +152,7 @@ function loadHtmlTable(data) {
     const table = document.querySelector('table tbody')
 
     if (data.length === 0) {
-        table.innerHTML = "<tr><td class='no-data text-xs text-center' colspan='5'>No Data</td></tr>"
+        table.innerHTML = "<tr><td class='no-data text-xs uu' colspan='5'>No Data</td></tr>"
         return
     }
     let tableHtml = ""
