@@ -92,8 +92,9 @@ addBtn.onclick = function () {
 function insertRowIntoTable(data) {
     const table = document.querySelector('table tbody')
     const isTableData = document.querySelector(".no-data")
-    
-    let tableHtml = `<tr class="border-b">`
+
+    let tableHtml = ""
+    tableHtml += `<tr class="border-b">`
     tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data.name}</td>`
     tableHtml += `<td class="py-3 px-3 text-xs text-white text-center">${data.comment}</td>`
     tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${new Date(data.dateAdded).toLocaleString()}</td>`
