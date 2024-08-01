@@ -48,7 +48,7 @@ updateBtn.onclick = function () {
     if (updateNameInput.value.trim() === "" || updateCommentInput.value.trim() === "") {
         return alert("Kindly fill all fields")
     }
-    
+
     fetch('http://localhost:5000/update', {
         method: "PATCH",
         headers: {
@@ -103,15 +103,7 @@ function insertRowIntoTable(data) {
     tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data.name}</td>`
     tableHtml += `<td class="py-3 px-3 text-xs text-white text-center">${data.comment}</td>`
     tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${new Date(data.dateAdded).toLocaleString()}</td>`
-    // console.log(data)
-    // for (var keys in data) {
-    //     if (data.hasOwnProperty(keys)) {
-    //         if (keys === "dateAdded") {
-    //             data[keys] = new Date(data[keys]).toLocaleString()
-    //         }
-    //         tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data[keys]}</td>`
-    //     }
-    // }
+   
     tableHtml += `
         <td class="py-3 edit-row-btn px-3 text-xs" data-id=${data.id}>
             <svg class="w-3 fill-green-300 m-auto" viewBox="0 0 512 512">
@@ -130,8 +122,6 @@ function insertRowIntoTable(data) {
             </svg>
         </td>
     `
-    // tableHtml += `<td><button class='delete-row-btn' data-id=${data.id}>delete</button></td>`
-    // tableHtml += `<td><button class='edit-row-btn' data-id=${data.id}>edit</button></td>`
     tableHtml += "</tr>"
 
     if (isTableData) {
