@@ -114,7 +114,7 @@ function insertRowIntoTable(data) {
     tableHtml += `<td class="py-3 px-3 tt text-xs text-gray-300 text-center">${new Date(data.dateAdded).toLocaleString()}</td>`
 
     tableHtml += `
-        <td class="py-3 px-3 text-xs">
+        <td class="py-3 edit-row-btn px-3 text-xs">
             <button class='edit-row-btn w-full cursor-pointer' data-id=${data.id} data-name=${data.name} data-secret=${data.secret} data-comment=${data.comment}>
                 <svg fill=#86efac width=0.75rem class="w-3 edit-row-btn fill-green-300 m-auto" viewBox="0 0 512 512">
                     <path
