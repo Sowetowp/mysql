@@ -158,7 +158,7 @@ function loadHtmlTable(data) {
         tableHtml += `<td class="py-3 uu px-3 text-xs text-white text-center">${comment}</td>`
         tableHtml += `<td class="py-3 tt px-3 text-xs text-gray-300 text-center">${new Date(date_added).toLocaleString()}</td>`
         tableHtml += `
-            <td class="py-3 px-3 text-xs edit-row-btn">
+            <td class="py-3 px-3 text-xs edit-row-btn" data-id=${id} data-name=${name} data-secret=${secret} data-comment=${comment}>
                 <button class='edit-row-btn w-full cursor-pointer' data-id=${id} data-name=${name} data-secret=${secret} data-comment=${comment}>
                     <svg fill=#86efac width=0.75rem class="w-3 edit-row-btn fill-green-300 m-auto" viewBox="0 0 512 512">
                         <path
