@@ -95,7 +95,7 @@ function insertRowIntoTable(data) {
 
     let tableHtml = ""
     tableHtml += `<tr class="border-b">`
-    tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data.name}</td>`
+    tableHtml += `<tr class="border-b"><td class="py-3 px-3 text-xs text-gray-300 text-center">${data.name}</td>`
     tableHtml += `<td class="py-3 px-3 text-xs text-white text-center">${data.comment}</td>`
     tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${new Date(data.dateAdded).toLocaleString()}</td>`
     // console.log(data)
