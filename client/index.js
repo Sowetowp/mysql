@@ -91,6 +91,7 @@ function insertRowIntoTable(data) {
     const table = document.querySelector('table tbody')
     const isTableData = document.querySelector(".no-data")
     let tableHtml = `<tr class="border-b">`
+    
     console.log(data)
     for (var keys in data) {
         if (data.hasOwnProperty(keys)) {
