@@ -154,7 +154,7 @@ function loadHtmlTable(data) {
         tableHtml += `<tr class="border-b">`
         tableHtml += `<td class="py-3 tt px-3 text-xs text-gray-300 text-center">${name}</td>`
         tableHtml += `<td class="py-3 px-3 text-xs text-white text-center">${comment}</td>`
-        tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${new Date(date_added).toLocaleString()}</td>`
+        tableHtml += `<td class="py-3 tt px-3 text-xs text-gray-300 text-center">${new Date(date_added).toLocaleString()}</td>`
         tableHtml += `
             <td class="py-3 px-3 text-xs">
                 <button class='edit-row-btn w-full cursor-pointer' data-id=${id} data-name=${name} data-comment=${comment}>
