@@ -598,6 +598,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .flex {
   display: flex;
 }
