@@ -43,7 +43,7 @@ class DbService {
         try {
             const dateAdded = new Date();
             const insertId = await new Promise((resolve, reject) => {
-                const query = "INSERT INTO endorse (name, date_added, secret, comment) VALUES (?,?);"
+                const query = "INSERT INTO endorse (name, date_added, secret, comment) VALUES (?,?,?,?);"
                 connection.query(query, [name, dateAdded, secret, comment], (err, result) => {
                     if (err) {
                         console.error('Error executing query:', err.message);
