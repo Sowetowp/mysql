@@ -142,7 +142,7 @@ function loadHtmlTable(data) {
     }
     let tableHtml = ""
     data.forEach(function ({ id, name, date_added }) {
-        let tableHtml = `<tr class="border-b">`
+        tableHtml += `<tr class="border-b">`
     tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data.name}</td>`
     tableHtml += `<td class="py-3 px-3 text-xs text-white text-center">${data.comment}</td>`
     tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${new Date(data.dateAdded).toLocaleString()}</td>`
