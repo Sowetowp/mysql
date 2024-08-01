@@ -26,6 +26,7 @@ searchBtn.onclick = function () {
 
 function deleteRow(id) {
     const prompt = prompt("provide your secret key")
+    console.log(prompt)
     if(prompt !== id.secret){
         return alert("Incorrect secret")
     }
