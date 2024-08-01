@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 document.querySelector("table tbody").addEventListener("click", function (event) {
-    if (event.target.classList.toString().contains("delete-row-btn")) {
+    if (target.classList && event.target.classList.contains("delete-row-btn")) {
         console.log("first")
         deleteRow(event.target.dataset.id)
     }
-    if (event.target.classList.toString().contains("edit-row-btn")) {
+    if (target.classList && event.target.classList.contains("edit-row-btn")) {
         handleEditRow(event.target.dataset.id)
     }
 })
