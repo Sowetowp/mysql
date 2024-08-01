@@ -52,8 +52,8 @@ updateBtn.onclick = function () {
         },
         body: JSON.stringify({
             id: updateBtn.dataset.id,
-            name: updateNameInput.value,
-            comment: updateCommentInput.value
+            name: updateNameInput.value.trim(),
+            comment: updateCommentInput.value.trim()
         })
     })
         .then(res => res.json())
