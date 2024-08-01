@@ -17,12 +17,12 @@ document.querySelector("table tbody").addEventListener("click", function (event)
 const updateBtn = document.querySelector("#update-row-btn")
 const searchBtn = document.querySelector("#search-btn")
 
-// searchBtn.onclick = function () {
-//     const searchValue = document.querySelector("#search-input").value
-//     fetch('http://localhost:5000/search/' + searchValue)
-//         .then(res => res.json())
-//         .then(data => loadHtmlTable(data["data"]))
-// }
+searchBtn.onclick = function () {
+    const searchValue = document.querySelector("#search-input").value
+    fetch('http://localhost:5000/search/' + searchValue)
+        .then(res => res.json())
+        .then(data => loadHtmlTable(data["data"]))
+}
 
 function deleteRow(id) {
     fetch(`http://localhost:5000/delete/${id}`, {
