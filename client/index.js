@@ -63,7 +63,7 @@ updateBtn.onclick = function () {
 }
 
 const addBtn = document.querySelector("#add-name-btn")
-console.log(addBtn)
+console.log("addBtn")
 addBtn.onclick = function () {
     const nameInput = document.querySelector("#nameInput")
     const secretInput = document.querySelector("#secretInput")
