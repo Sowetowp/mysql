@@ -37,6 +37,7 @@ function deleteRow(id) {
 }
 
 function handleEditRow(id) {
+    console.log(id)
     const updateSection = document.querySelector("#update-row")
     updateSection.hidden = false
     updateSection.classList.add("flex")
