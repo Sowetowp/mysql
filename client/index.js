@@ -37,11 +37,10 @@ function deleteRow(id) {
 }
 
 function handleEditRow(id) {
-    console.log(id)
     const updateSection = document.querySelector("#update-row")
     updateSection.hidden = false
     updateSection.classList.add("flex")
-    document.querySelector("#update-row-btn").dataset.id = id
+    document.querySelector("#update-row-btn").dataset.id = id.id
 }
 
 updateBtn.onclick = function () {
