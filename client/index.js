@@ -69,8 +69,8 @@ addBtn.onclick = function () {
     const commentInput = document.querySelector("#commentInput")
     const name = nameInput.value
     nameInput.value = ""
-    nameInput.value = ""
-    nameInput.value = ""
+    secretInput.value = ""
+    commentInput.value = ""
 
     fetch('http://localhost:5000/insert', {
         headers: {
