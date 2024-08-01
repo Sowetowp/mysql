@@ -654,6 +654,10 @@ video {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
