@@ -72,6 +72,13 @@ addBtn.onclick = function (e) {
     const secret = secretInput.value = ""
     const comment = commentInput.value = ""
 
+    const name = nameInput.value;
+    const secret = secretInput.value;
+    const comment = commentInput.value;
+
+    secretInput.value = "";
+    commentInput.value = "";
+
     fetch('http://localhost:5000/insert', {
         headers: {
             "Content-type": 'application/json'
