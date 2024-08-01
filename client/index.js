@@ -71,7 +71,6 @@ addBtn.onclick = function (e) {
     const name = nameInput.value
     const secret = secretInput.value = ""
     const comment = commentInput.value = ""
-    commentInput.value = ""
 
     fetch('http://localhost:5000/insert', {
         headers: {
