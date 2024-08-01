@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelector("table tbody").addEventListener("click", function (event) {
     console.log("first")
-    if (event.target.classList && event.target.classList.contains("delete-row-btn")) {
+    if (event.target.classList === "delete-row-btn") {
         deleteRow(event.target.dataset.id)
     }
-    if (event.target.classList && event.target.classList.contains("edit-row-btn")) {
+    if (event.target.classList === "edit-row-btn") {
         console.log("first2")
         handleEditRow(event.target.dataset)
     }
