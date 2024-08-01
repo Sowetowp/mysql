@@ -68,9 +68,9 @@ addBtn.onclick = function () {
     const secretInput = document.querySelector("#secretInput")
     const commentInput = document.querySelector("#commentInput")
 
-    const name = nameInput.value;
-    const secret = secretInput.value;
-    const comment = commentInput.value;
+    const name = nameInput.value.trim();
+    const secret = secretInput.value.trim();
+    const comment = commentInput.value.trim();
     if(name === "" || secret==="" || comment === ""){
         return alert("fill all fields")
     }
