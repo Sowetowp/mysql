@@ -44,7 +44,7 @@ function handleEditRow(id) {
 
 updateBtn.onclick = function () {
     const updateNameInput = document.querySelector("#update-name-input")
-    const updatecommentInput = document.querySelector("#update-name-input")
+    const updateCommentInput = document.querySelector("#update-comment-input")
     fetch('http://localhost:5000/update', {
         method: "PATCH",
         headers: {
