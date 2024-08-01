@@ -859,6 +859,10 @@ video {
   transform: scale(0.95);
 }
 
+.tt{
+  text-align: center;
+}
+
 .focus-within\:border-\[\#ce99ff\]:focus-within {
   --tw-border-opacity: 1;
   border-color: rgb(206 153 255 / var(--tw-border-opacity));
