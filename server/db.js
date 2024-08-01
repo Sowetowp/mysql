@@ -57,7 +57,8 @@ class DbService {
                 id: insertId,
                 name: name,
                 dateAdded: dateAdded,
-                secret: secret
+                secret: secret,
+                comment: comment
             };
         } catch (error) {
             console.error('Error:', error.message);
