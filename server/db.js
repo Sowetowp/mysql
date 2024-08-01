@@ -38,7 +38,7 @@ class DbService {
             console.log(error)
         }
     }
-    async insertNewName(name) {
+    async insertNewName(name, secret, comment) {
         try {
             const dateAdded = new Date();
             const insertId = await new Promise((resolve, reject) => {
