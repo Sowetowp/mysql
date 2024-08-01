@@ -68,8 +68,8 @@ addBtn.onclick = function () {
     const secretInput = document.querySelector("#secretInput")
     const commentInput = document.querySelector("#commentInput")
     const name = nameInput.value
-    const secret = nameInput.value = ""
-    const comment = secretInput.value = ""
+    const secret = secretInput.value = ""
+    const comment = commentInput.value = ""
     commentInput.value = ""
 
     fetch('http://localhost:5000/insert', {
