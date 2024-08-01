@@ -55,7 +55,7 @@ updateBtn.onclick = function () {
     const updateNameInput = document.querySelector("#update-name-input")
     const updateCommentInput = document.querySelector("#update-comment-input")
     const updateSecretInput = document.querySelector("#update-secret-input")
-
+console.log(updateBtn.dataset.secret)
     if (updateNameInput.value.trim() === "" || updateCommentInput.value.trim() === "") {
         return alert("Kindly fill all fields")
     }
