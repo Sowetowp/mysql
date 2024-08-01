@@ -84,7 +84,7 @@ class DbService {
             return false
         }
     }
-    async updateRow(id, name) {
+    async updateRow(id, name, secret, comment) {
         try {
             id = parseInt(id, 10)
             const response = await new Promise((resolve, reject) => {
