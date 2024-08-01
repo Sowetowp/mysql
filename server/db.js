@@ -39,7 +39,7 @@ class DbService {
         }
     }
     async insertNewName(name, secret, comment) {
-        console.log(first)
+        console.log(name, secret, comment)
         try {
             const dateAdded = new Date();
             const insertId = await new Promise((resolve, reject) => {
