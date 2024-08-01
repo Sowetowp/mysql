@@ -50,7 +50,6 @@ function handleEditRow(id) {
 }
 
 updateBtn.onclick = function () {
-    console.log(updateBtn.dataset.comment)
     const updateNameInput = document.querySelector("#update-name-input")
     const updateCommentInput = document.querySelector("#update-comment-input")
     
