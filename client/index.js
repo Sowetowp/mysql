@@ -112,6 +112,9 @@ function insertRowIntoTable(data) {
             </svg>
         </td>
     `
+    tableHtml += `
+    
+    `
     tableHtml += `<td><button class='delete-row-btn' data-id=${data.id}>delete</button></td>`
     tableHtml += `<td><button class='edit-row-btn' data-id=${data.id}>edit</button></td>`
     tableHtml += "</tr>"
