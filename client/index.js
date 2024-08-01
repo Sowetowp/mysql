@@ -41,7 +41,7 @@ function handleEditRow(id) {
     updateSection.hidden = false
     updateSection.classList.add("flex")
     document.querySelector("#update-row-btn").dataset.id = id.id
-    document.querySelector("#update-row-btn").dataset.name = id.name
+    document.querySelector("#update-row-btn").dataset.secret = id.secret
     const updateNameInput = document.querySelector("#update-name-input")
     const updateCommentInput = document.querySelector("#update-comment-input")
     updateCommentInput.value = updateBtn.dataset.comment;
