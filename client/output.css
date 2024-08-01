@@ -610,6 +610,10 @@ video {
   display: table;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-80 {
   height: 20rem;
 }
