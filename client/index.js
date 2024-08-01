@@ -59,7 +59,9 @@ updateBtn.onclick = function () {
     if (updateNameInput.value.trim() === "" || updateCommentInput.value.trim() === "") {
         return alert("Kindly fill all fields")
     }
-    if(updateSecretInput !== )
+    if(updateSecretInput !== updateBtn.dataset.secret){
+        return alert("")
+    }
     fetch('http://localhost:5000/update', {
         method: "PATCH",
         headers: {
