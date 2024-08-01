@@ -25,7 +25,7 @@ searchBtn.onclick = function () {
 }
 
 function deleteRow(id) {
-    prompt()
+    prompt("")
     fetch(`http://localhost:5000/delete/${id.id}`, {
         method: "DELETE"
     })
