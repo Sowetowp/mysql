@@ -11,7 +11,7 @@ document.querySelector("table tbody").addEventListener("click", function (event)
         deleteRow(event.target.dataset.id)
     }
     if (event.target.classList && event.target.classList.contains("edit-row-btn")) {
-        
+        console.log("first")
         handleEditRow(event.target.dataset)
     }
 })
