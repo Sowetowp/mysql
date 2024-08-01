@@ -65,8 +65,8 @@ updateBtn.onclick = function () {
 const addBtn = document.querySelector("#add-name-btn")
 addBtn.onclick = function () {
     const nameInput = document.querySelector("#nameInput")
-    const nameInput = document.querySelector("#nameInput")
-    const nameInput = document.querySelector("#nameInput")
+    const secretInput = document.querySelector("#nameInput")
+    const commentInput = document.querySelector("#nameInput")
     const name = nameInput.value
     nameInput.value = ""
 
