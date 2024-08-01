@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('http://localhost:5000/getAll')
+    fetch('https://mysql-zney.onrender.com/getAll')
         .then(res => res.json())
         .then(data => loadHtmlTable(data["data"]))
 
@@ -19,7 +19,7 @@ const searchBtn = document.querySelector("#search-btn")
 
 searchBtn.onclick = function () {
     const searchValue = document.querySelector("#search-input").value
-    fetch('http://localhost:5000/search/' + searchValue)
+    fetch('https://mysql-zney.onrender.com/search/' + searchValue)
         .then(res => res.json())
         .then(data => loadHtmlTable(data["data"]))
 }
@@ -29,7 +29,7 @@ function deleteRow(id) {
     if(promp !== id.secret){
         return alert("Incorrect secret")
     }
-    fetch(`http://localhost:5000/delete/${id.id}`, {
+    fetch(`https://mysql-zney.onrender.com/delete/${id.id}`, {
         method: "DELETE"
     })
         .then(res => res.json())
@@ -63,7 +63,7 @@ updateBtn.onclick = function () {
     if(updateSecretInput.value !== updateBtn.dataset.secret){
         return alert("Incorrect secret")
     }
-    fetch('http://localhost:5000/update', {
+    fetch('https://mysql-zney.onrender.com/update', {
         method: "PATCH",
         headers: {
             "Content-type": 'application/json'
@@ -98,7 +98,7 @@ addBtn.onclick = function () {
     secretInput.value = "";
     commentInput.value = "";
 
-    fetch('http://localhost:5000/insert', {
+    fetch('https://mysql-zney.onrender.com/insert', {
         headers: {
             "Content-type": 'application/json'
         },
