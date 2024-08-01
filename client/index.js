@@ -63,7 +63,6 @@ function handleEditRow(id) {
 // }
 
 const addBtn = document.querySelector("#add-name-btn")
-console.log("addBtn")
 addBtn.onclick = function () {
     const nameInput = document.querySelector("#nameInput")
     const secretInput = document.querySelector("#secretInput")
