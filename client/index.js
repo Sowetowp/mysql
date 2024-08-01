@@ -52,7 +52,7 @@ updateBtn.onclick = function () {
         },
         body: JSON.stringify({
             id: updateBtn.dataset.id,
-            name: updateNameInput.value
+            name: updateNameInput.value,
             comment: updateCommentInput.value
         })
     })
