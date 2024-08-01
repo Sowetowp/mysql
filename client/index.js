@@ -72,7 +72,7 @@ addBtn.onclick = function () {
     const secret = secretInput.value.trim();
     const comment = commentInput.value.trim();
     if(name === "" || secret==="" || comment === ""){
-        return alert("fill all fields")
+        return alert("Kindly fill all fields")
     }
     nameInput.value = "";
     secretInput.value = "";
