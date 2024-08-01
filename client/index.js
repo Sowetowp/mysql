@@ -141,7 +141,7 @@ function loadHtmlTable(data) {
         return
     }
     let tableHtml = ""
-    data.forEach(function ({ secret, name, date_added, comment }) {
+    data.forEach(function ({ name, date_added, comment }) {
         tableHtml += `<tr class="border-b">`
         tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${name}</td>`
         tableHtml += `<td class="py-3 px-3 text-xs text-white text-center">${comment}</td>`
