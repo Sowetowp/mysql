@@ -46,9 +46,10 @@ function handleEditRow(id) {
 }
 
 updateBtn.onclick = function () {
+    console.log(updateBtn.dataset.comment)
     const updateNameInput = document.querySelector("#update-name-input")
     const updateCommentInput = document.querySelector("#update-comment-input")
-    updateCommentInput.value = "updateBtn.dataset.comment";
+    updateCommentInput.value = updateBtn.dataset.comment;
     updateNameInput.value = updateBtn.dataset.name;
     if (updateNameInput.value.trim() === "" || updateCommentInput.value.trim() === "") {
         return alert("Kindly fill all fields")
