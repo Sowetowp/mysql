@@ -143,19 +143,10 @@ function loadHtmlTable(data) {
     let tableHtml = ""
     data.forEach(function ({ id, name, date_added }) {
         tableHtml += `<tr class="border-b">`
-    tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data.name}</td>`
-    tableHtml += `<td class="py-3 px-3 text-xs text-white text-center">${data.comment}</td>`
-    tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${new Date(data.dateAdded).toLocaleString()}</td>`
-    // console.log(data)
-    // for (var keys in data) {
-    //     if (data.hasOwnProperty(keys)) {
-    //         if (keys === "dateAdded") {
-    //             data[keys] = new Date(data[keys]).toLocaleString()
-    //         }
-    //         tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data[keys]}</td>`
-    //     }
-    // }
-    tableHtml += `
+        tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${data.name}</td>`
+        tableHtml += `<td class="py-3 px-3 text-xs text-white text-center">${data.comment}</td>`
+        tableHtml += `<td class="py-3 px-3 text-xs text-gray-300 text-center">${new Date(data.dateAdded).toLocaleString()}</td>`
+        tableHtml += `
         <td class="py-3 edit-row-btn px-3 text-xs" data-id=${data.id}>
             <svg class="w-3 fill-green-300 m-auto" viewBox="0 0 512 512">
                 <path
@@ -164,7 +155,7 @@ function loadHtmlTable(data) {
             </svg>
         </td>
     `
-    tableHtml += `
+        tableHtml += `
         <td data-id=${data.id} class="py-3 delete-row-btn px-3 text-xs">
             <svg viewBox="0 0 448 512" class="w-3 m-auto fill-red-400">
                 <path
@@ -173,7 +164,7 @@ function loadHtmlTable(data) {
             </svg>
         </td>
     `
-   tableHtml += "</tr>"
+        tableHtml += "</tr>"
 
         // tableHtml += "<tr>"
         tableHtml += `<td>${id}</td>`
