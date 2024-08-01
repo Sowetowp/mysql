@@ -42,25 +42,25 @@ function handleEditRow(id) {
     document.querySelector("#update-row-btn").dataset.id = id
 }
 
-// updateBtn.onclick = function () {
-//     const updateNameInput = document.querySelector("#update-name-input")
-//     fetch('http://localhost:5000/update', {
-//         method: "PATCH",
-//         headers: {
-//             "Content-type": 'application/json'
-//         },
-//         body: JSON.stringify({
-//             id: updateBtn.dataset.id,
-//             name: updateNameInput.value
-//         })
-//     })
-//         .then(res => res.json())
-//         .then(data => {
-//             if (data.success) {
-//                 location.reload()
-//             }
-//         })
-// }
+updateBtn.onclick = function () {
+    const updateNameInput = document.querySelector("#update-name-input")
+    fetch('http://localhost:5000/update', {
+        method: "PATCH",
+        headers: {
+            "Content-type": 'application/json'
+        },
+        body: JSON.stringify({
+            id: updateBtn.dataset.id,
+            name: updateNameInput.value
+        })
+    })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                location.reload()
+            }
+        })
+}
 
 const addBtn = document.querySelector("#add-name-btn")
 addBtn.onclick = function () {
