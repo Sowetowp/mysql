@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     fetch('https://mysql-zney.onrender.com/getAll')
         .then(res => res.json())
-        .then(data => console.log(data["data"]))
+        .then(data => loadHtmlTable(data["data"]))
 
 })
 
