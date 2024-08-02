@@ -27,7 +27,7 @@ searchBtn.onclick = function () {
 function deleteRow(id) {
     const promp = prompt("provide your secret key")
     if(promp !== id.secret){
-        return alert("Incorrect secret")
+        return alert("Incorrect password")
     }
     fetch(`https://mysql-zney.onrender.com/delete/${id.id}`, {
         method: "DELETE"
@@ -61,7 +61,7 @@ updateBtn.onclick = function () {
         return alert("Kindly fill all fields")
     }
     if(updateSecretInput.value !== updateBtn.dataset.secret){
-        return alert("Incorrect secret")
+        return alert("Incorrect password")
     }
     fetch('https://mysql-zney.onrender.com/update', {
         method: "PATCH",
