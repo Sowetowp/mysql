@@ -1,51 +1,44 @@
-const mysql = require("mysql")
-const dotenv = require("dotenv")
-let instance = null
-dotenv.config()
+const mysql = require("mysql");
+const dotenv = require("dotenv");
+let instance = null;
+dotenv.config();
 
-const connection = mysql.createConnection({
+const pool = mysql.createPool({
+    connectionLimit: 10,
     host: process.env.HOST,
     user: process.env.USER,
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
     port: process.env.DB_PORT
-})
-
-
-
-connection.connect((err) => {
-    if (err) {
-        console.log(err.message)
-    }
-    console.log("db" + " " + connection.state)
-})
+});
 
 class DbService {
     static getDbServiceInstance() {
-        return instance ? instance : new DbService()
+        return instance ? instance : new DbService();
     }
 
     async getAllData() {
         try {
             const response = await new Promise((resolve, reject) => {
-                const query = "SELECT * FROM endorse;"
-                connection.query(query, (err, result) => {
-                    if (err) reject(new Error(err.message))
-                    resolve(result)
-                })
-            })
-            console.log(response)
-            return response
+                const query = "SELECT * FROM endorse;";
+                pool.query(query, (err, result) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(result);
+                });
+            });
+            console.log(response);
+            return response;
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
     }
+
     async insertNewName(name, secret, comment) {
         try {
             const dateAdded = new Date();
             const insertId = await new Promise((resolve, reject) => {
-                const query = "INSERT INTO endorse (name, date_added, secret, comment) VALUES (?,?,?,?);"
-                connection.query(query, [name, dateAdded, secret, comment], (err, result) => {
+                const query = "INSERT INTO endorse (name, date_added, secret, comment) VALUES (?,?,?,?);";
+                pool.query(query, [name, dateAdded, secret, comment], (err, result) => {
                     if (err) {
                         console.error('Error executing query:', err.message);
                         reject(new Error(err.message));
@@ -66,12 +59,13 @@ class DbService {
             console.error('Error:', error.message);
         }
     }
+
     async deleteRow(id) {
         try {
-            id = parseInt(id, 10)
+            id = parseInt(id, 10);
             const response = await new Promise((resolve, reject) => {
-                const query = "DELETE FROM endorse WHERE id = ?"
-                connection.query(query, [id], (err, result) => {
+                const query = "DELETE FROM endorse WHERE id = ?";
+                pool.query(query, [id], (err, result) => {
                     if (err) {
                         console.error('Error executing query:', err.message);
                         reject(new Error(err.message));
@@ -80,18 +74,19 @@ class DbService {
                     }
                 });
             });
-            return response === 1 ? true : false
+            return response === 1 ? true : false;
         } catch (error) {
-            console.log(error)
-            return false
+            console.log(error);
+            return false;
         }
     }
+
     async updateRow(id, name, comment) {
         try {
-            id = parseInt(id, 10)
+            id = parseInt(id, 10);
             const response = await new Promise((resolve, reject) => {
-                const query = "UPDATE endorse SET name = ?, comment = ? WHERE id = ?"
-                connection.query(query, [name, comment, id], (err, result) => {
+                const query = "UPDATE endorse SET name = ?, comment = ? WHERE id = ?";
+                pool.query(query, [name, comment, id], (err, result) => {
                     if (err) {
                         console.error('Error executing query:', err.message);
                         reject(new Error(err.message));
@@ -100,26 +95,27 @@ class DbService {
                     }
                 });
             });
-            return response === 1 ? true : false
+            return response === 1 ? true : false;
         } catch (error) {
-            console.log(error)
-            return false
+            console.log(error);
+            return false;
         }
     }
+
     async search(name) {
         try {
             const response = await new Promise((resolve, reject) => {
-                const query = "SELECT * FROM endorse WHERE name = ?;"
-                connection.query(query, [name], (err, result) => {
-                    if (err) reject(new Error(err.message))
-                    resolve(result)
-                })
-            })
-            return response
+                const query = "SELECT * FROM endorse WHERE name = ?;";
+                pool.query(query, [name], (err, result) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(result);
+                });
+            });
+            return response;
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
     }
 }
 
-module.exports = DbService
+module.exports = DbService;
